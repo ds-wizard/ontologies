@@ -1,0 +1,4953 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "https://schema.org", "http://purl.org/dc/terms", "http://www.w3.org/2001/XMLSchema", "http://xmlns.com/foaf/0.1", "http://ontology.ds-wizard.org/dsw-ontology", "http://www.w3.org/2004/02/skos/core" ],
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#",
+    "author" : [ "Jana Martínková" ],
+    "labels" : {
+      "en" : "DSW Ontology"
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Jana Martínková",
+        "type" : "label"
+      } ],
+      "hasVersion" : [ {
+        "identifier" : "hasVersion",
+        "language" : "undefined",
+        "value" : "2024-01",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by-sa/4.0/",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "dsw",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "101",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "124",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "145",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "219",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "225",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "102",
+    "type" : "owl:Class"
+  }, {
+    "id" : "226",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "227",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "228",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "112",
+    "type" : "owl:Class"
+  }, {
+    "id" : "236",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "237",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "199",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "238",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "239",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "96",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "owl:Class"
+  }, {
+    "id" : "105",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "207",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "113",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "209",
+    "type" : "owl:Class"
+  }, {
+    "id" : "250",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "224",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "192",
+    "type" : "owl:Class"
+  }, {
+    "id" : "129",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "255",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "267",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "241",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "92",
+    "type" : "owl:Class"
+  }, {
+    "id" : "194",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "172",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "280",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "155",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "189",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "285",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "161",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "272",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "114",
+    "type" : "owl:Class"
+  }, {
+    "id" : "269",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "213",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "282",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "103",
+    "type" : "owl:Class"
+  }, {
+    "id" : "121",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "297",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "246",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "300",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "302",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "304",
+    "type" : "owl:Class"
+  }, {
+    "id" : "133",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "119",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "284",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "152",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "307",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "176",
+    "type" : "owl:Class"
+  }, {
+    "id" : "118",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "316",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "257",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "222",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "252",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "230",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "100",
+    "type" : "owl:Class"
+  }, {
+    "id" : "318",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "263",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "164",
+    "type" : "owl:Class"
+  }, {
+    "id" : "94",
+    "type" : "owl:Class"
+  }, {
+    "id" : "324",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "266",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "259",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "326",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "216",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "177",
+    "type" : "owl:Class"
+  }, {
+    "id" : "346",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "277",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "167",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "354",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "355",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "180",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "359",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "187",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "181",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "262",
+    "type" : "owl:Class"
+  }, {
+    "id" : "330",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "329",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "361",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "153",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "314",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "363",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "364",
+    "type" : "rdfs:Literal"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#Metric",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Metric",
+      "en" : "Metric"
+    },
+    "comment" : {
+      "en" : "A Metric is a clasification for Options Questions and questionnaire in general."
+    },
+    "id" : "23",
+    "superClasses" : [ "24", "25", "26" ]
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#IntegrationTypeIntegrationReply",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IntegrationTypeIntegrationReply",
+      "en" : "Integration Type Integration Reply"
+    },
+    "comment" : {
+      "en" : "An Integration Type Integration Reply is a type of Integration Replie that includes a valid URL link to an element in an external resource."
+    },
+    "id" : "30",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#ValueQuestion",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ValueQuestion",
+      "en" : "Value Question"
+    },
+    "comment" : {
+      "undefined" : "A Value Question is a type of question with open single value reply."
+    },
+    "id" : "8",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#ApiIntegration",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ApiIntegration",
+      "en" : "API Integration"
+    },
+    "comment" : {
+      "en" : "An API Integration is type of Integration that uses API."
+    },
+    "id" : "43",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#Answer",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Answer",
+      "en" : "Answer"
+    },
+    "comment" : {
+      "en" : "An Answer is a predefined reply to an Options Type question."
+    },
+    "id" : "53",
+    "superClasses" : [ "24", "26", "54" ]
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#PropsableElement",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PropsableElement",
+      "en" : "Propsable Element"
+    },
+    "subClasses" : [ "44", "11" ],
+    "comment" : {
+      "en" : "An abstract class carrying the Prop."
+    },
+    "id" : "72"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#MultiChoiceQuestion",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MultiChoiceQuestion",
+      "en" : "MultiChoice Question"
+    },
+    "comment" : {
+      "en" : "A MultiChoice Question is a type of question whit list of possible choices."
+    },
+    "id" : "13",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#UuidElement",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UuidElement",
+      "en" : "UUID Element"
+    },
+    "subClasses" : [ "71", "4", "26", "92", "102", "103" ],
+    "comment" : {
+      "en" : "An abstract class carrying the UUID identifier."
+    },
+    "id" : "101"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#Questionnaire",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Questionnaire",
+      "en" : "Questionnaire"
+    },
+    "comment" : {
+      "en" : "A Questionnaire is a fill-in form for gathering information form users based on the Knowledge Model."
+    },
+    "id" : "47",
+    "superClasses" : [ "25", "26", "64" ]
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#DescribableElement",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DescribableElement",
+      "en" : "Describable Element"
+    },
+    "subClasses" : [ "114", "78", "9", "47", "92", "23", "59", "61", "46" ],
+    "comment" : {
+      "en" : "An abstract class carrying the description."
+    },
+    "id" : "25"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#CreatedByElement",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CreatedByElement",
+      "en" : "Created By Element"
+    },
+    "subClasses" : [ "47", "46", "66" ],
+    "comment" : {
+      "en" : "An abstract class carrying the CreatedBy."
+    },
+    "id" : "64"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#Reference",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Reference",
+      "en" : "Reference"
+    },
+    "subClasses" : [ "70", "74" ],
+    "comment" : {
+      "en" : "A Reference provides additional informations that can be used to answer a question."
+    },
+    "id" : "71",
+    "superClasses" : [ "101", "24" ]
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#ReportItem",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ReportItem",
+      "en" : "Report Item"
+    },
+    "subClasses" : [ "51", "56" ],
+    "comment" : {
+      "en" : "A Report Item is a part of a Report."
+    },
+    "id" : "52"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#Chapter",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Chapter",
+      "undefined" : "Chapter"
+    },
+    "comment" : {
+      "en" : "A Chapter is a collection of questions."
+    },
+    "id" : "59",
+    "superClasses" : [ "24", "25", "26", "54" ]
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#MultiChoiceReply",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MultiChoiceReply",
+      "en" : "MultiChoice Reply"
+    },
+    "comment" : {
+      "en" : "A MultiChoice Reply is a type of response that is given to a MultiChoice type question."
+    },
+    "id" : "124",
+    "superClasses" : [ "66" ]
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#EmailableElement",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EmailableElement",
+      "en" : "E-mail Element"
+    },
+    "subClasses" : [ "1", "4" ],
+    "comment" : {
+      "en" : "An abstract class carrying the E-mail."
+    },
+    "id" : "2"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#ContextConfig",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ContextConfig",
+      "en" : "Context Configuration"
+    },
+    "comment" : {
+      "en" : "A Context Configuration is set of configuration parameters of DSW."
+    },
+    "id" : "145"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#IntegrationQuestion",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IntegrationQuestion",
+      "en" : "Integration Question"
+    },
+    "comment" : {
+      "en" : "An Integration Question is a type of question that uses an external resource."
+    },
+    "id" : "11",
+    "superClasses" : [ "9", "72" ]
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#ReportMetric",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ReportMetric",
+      "en" : "Report Metric"
+    },
+    "comment" : {
+      "en" : "A Report Metric is a metric result that is associated with a Report Item."
+    },
+    "id" : "41",
+    "superClasses" : [ "177" ]
+  }, {
+    "iri" : "https://schema.org/ContactPoint",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ContactPoint"
+    },
+    "subClasses" : [ "1" ],
+    "attributes" : [ "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#QuestionnaireVersion",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "QuestionnaireVersion",
+      "en" : "Questionnaire Version"
+    },
+    "comment" : {
+      "en" : "A Questionnaire Version is a version of Questionnaire."
+    },
+    "id" : "46",
+    "superClasses" : [ "25", "26", "64", "80" ]
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#ListOfItemsQuestion",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ListOfItemsQuestion",
+      "en" : "List Of Items Question"
+    },
+    "comment" : {
+      "en" : "A List Of Items Question is a type of question for multiple replies based on item template."
+    },
+    "id" : "22",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "219",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#Question",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Question",
+      "en" : "Question"
+    },
+    "subClasses" : [ "8", "11", "13", "15", "22" ],
+    "comment" : {
+      "en" : "A Question is used to collect replies from users."
+    },
+    "id" : "9",
+    "superClasses" : [ "24", "25", "26", "54" ]
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#Expert",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Expert",
+      "en" : "Expert"
+    },
+    "comment" : {
+      "en" : "An Expert is a specialist for a specific topic that can be contacted. "
+    },
+    "id" : "1",
+    "superClasses" : [ "6", "24", "2", "26" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "225",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#User",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "User",
+      "en" : "User"
+    },
+    "comment" : {
+      "en" : "A User is a person who uses or participates in DSW."
+    },
+    "id" : "4",
+    "superClasses" : [ "101", "2", "112", "192", "80" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "76",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#Report",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Report",
+      "en" : "Report"
+    },
+    "comment" : {
+      "en" : "A Report is an evaluation of information gathered from a questionnaire."
+    },
+    "id" : "102",
+    "superClasses" : [ "101", "80" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "226",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "227",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#OptionsQuestion",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OptionsQuestion",
+      "en" : "Options Question"
+    },
+    "comment" : {
+      "en" : "An Options Question is a type of question with closed list of answers."
+    },
+    "id" : "15",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "228",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#AffiliationableElement",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AffiliationableElement",
+      "en" : "Affiliationable Element"
+    },
+    "subClasses" : [ "114", "4" ],
+    "comment" : {
+      "en" : "An abstract class carrying the Affiliation."
+    },
+    "id" : "112"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "236",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "237",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#CreatedElement",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CreatedElement",
+      "en" : "Created Element"
+    },
+    "subClasses" : [ "92", "66", "80" ],
+    "comment" : {
+      "en" : "An abstract class carrying the CreatedAt."
+    },
+    "id" : "199"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "87",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "238",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "239",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#ResourcePageReference",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ResourcePageReference",
+      "en" : "Resource Page Reference"
+    },
+    "comment" : {
+      "en" : "A Resource Page Reference provides additional information that can be used to answer a question in form of linked chapter of a book."
+    },
+    "id" : "70",
+    "superClasses" : [ "71" ]
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#AnswerReply",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AnswerReply",
+      "en" : "Answer Reply"
+    },
+    "comment" : {
+      "en" : "An Answer Reply is a type of response that is given to an Options type question."
+    },
+    "id" : "96",
+    "superClasses" : [ "66" ]
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#UpdatedElement",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UpdatedElement",
+      "en" : "Updated Element"
+    },
+    "subClasses" : [ "4", "102", "103", "46" ],
+    "comment" : {
+      "en" : "An abstract class carrying the UpdatedAt."
+    },
+    "id" : "80",
+    "superClasses" : [ "199" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "105",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "207",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "113",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://schema.org/CreativeWork",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CreativeWork"
+    },
+    "subClasses" : [ "92" ],
+    "attributes" : [ "external" ],
+    "id" : "209"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "250",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "224",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "39",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Person",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "subClasses" : [ "4" ],
+    "attributes" : [ "external" ],
+    "id" : "192"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "129",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "255",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "267",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "241",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#KnowledgeModel",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "KnowledgeModel",
+      "en" : "Knowledge Model"
+    },
+    "comment" : {
+      "en" : "A Knowledge Model is a structured template that consists of metrics, phases, question tags integrations and chapters."
+    },
+    "id" : "92",
+    "superClasses" : [ "101", "25", "209", "194", "54", "199" ]
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#AnnotatableElement",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AnnotatableElement",
+      "en" : "Annotatable Element"
+    },
+    "subClasses" : [ "24", "92" ],
+    "comment" : {
+      "en" : "An abstract class carrying the annotation."
+    },
+    "id" : "194"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#Tag",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tag",
+      "en" : "Tag"
+    },
+    "comment" : {
+      "en" : "A Tag is an attachable label for questions."
+    },
+    "id" : "61",
+    "superClasses" : [ "24", "25", "26" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "172",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "123",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "280",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "155",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "42",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#ChapterReportItem",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ChapterReportItem",
+      "en" : "Report Item"
+    },
+    "comment" : {
+      "en" : "A Chapter Report Item is a part of a Report that is about concrete Chapter."
+    },
+    "id" : "56",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "189",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "285",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "161",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "272",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "20",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#Reply",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Reply",
+      "en" : "Reply"
+    },
+    "subClasses" : [ "124", "167", "17", "96", "31" ],
+    "comment" : {
+      "en" : "A Reply is a response to a question."
+    },
+    "id" : "66",
+    "superClasses" : [ "199", "64" ]
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#Organization",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organization",
+      "en" : "Organization"
+    },
+    "comment" : {
+      "en" : "An Organization is a group that manages an instance of DSW."
+    },
+    "id" : "114",
+    "superClasses" : [ "164", "25", "112" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "269",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#IntegrationReply",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IntegrationReply",
+      "en" : "Integration Reply"
+    },
+    "subClasses" : [ "176", "30" ],
+    "comment" : {
+      "en" : "An Integration Reply is a type of response that is given to an Integration type question."
+    },
+    "id" : "31",
+    "superClasses" : [ "66" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "213",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "282",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#Document",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Document",
+      "en" : "Document"
+    },
+    "comment" : {
+      "en" : "Document is an exported document of the instance of the questionnaire."
+    },
+    "id" : "103",
+    "superClasses" : [ "101", "80" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "121",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#ParentElement",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ParentElement",
+      "en" : "Parent Element"
+    },
+    "subClasses" : [ "9", "92", "59", "53" ],
+    "comment" : {
+      "en" : "An abstract class carrying the containsChild."
+    },
+    "id" : "54"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "297",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "246",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "300",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "302",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Resource"
+    },
+    "attributes" : [ "external" ],
+    "id" : "304"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "133",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "119",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "284",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "152",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "307",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#PlainTypeIntegrationReply",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PlainTypeIntegrationReply",
+      "en" : "Plain Type Integration Reply"
+    },
+    "comment" : {
+      "en" : "A Plain Type Integration Reply is a type of Integration Replie that does not include a valid URL link to an element in an external resource."
+    },
+    "id" : "176",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "118",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "316",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "257",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "222",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "252",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "85",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "230",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#MetricMeasure",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MetricMeasure",
+      "en" : "Metric Measure"
+    },
+    "comment" : {
+      "en" : "A Metric Measure is a measure of the effect of an answer on a defined metric."
+    },
+    "id" : "100",
+    "superClasses" : [ "177" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "318",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "28",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "263",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "https://schema.org/Organization",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organization"
+    },
+    "subClasses" : [ "114" ],
+    "attributes" : [ "external" ],
+    "id" : "164"
+  }, {
+    "iri" : "https://schema.org/URL",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "URL"
+    },
+    "attributes" : [ "external" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "324",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "81",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "266",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#time",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "33",
+    "label" : {
+      "IRI-based" : "time"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "259",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "326",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "216",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#TotalReportItem",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TotalReportItem",
+      "en" : "Report Item"
+    },
+    "comment" : {
+      "en" : "A Report Item is a part of a Report that is about Questionnaire in general."
+    },
+    "id" : "51",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#ChildElement",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ChildElement",
+      "en" : "Child Element"
+    },
+    "subClasses" : [ "44", "71", "35", "1", "78", "9", "23", "59", "61", "53" ],
+    "comment" : {
+      "en" : "An abstract class carrying the hasParent and order."
+    },
+    "id" : "24",
+    "superClasses" : [ "194" ]
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#TitleElement",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TitleElement",
+      "en" : "Title Element"
+    },
+    "subClasses" : [ "44", "35", "1", "78", "9", "47", "74", "23", "59", "61", "46", "53" ],
+    "comment" : {
+      "en" : "An abstract class carrying the title."
+    },
+    "id" : "26",
+    "superClasses" : [ "101" ]
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#MetricElement",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MetricElement",
+      "en" : "Metric Element"
+    },
+    "subClasses" : [ "100", "41" ],
+    "comment" : {
+      "en" : "An abstract class carrying the Metric."
+    },
+    "id" : "177"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "346",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#KeyValueEntry",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "KeyValueEntry",
+      "en" : "Key Value Entry"
+    },
+    "comment" : {
+      "en" : "An abstract class carrying the key and value."
+    },
+    "id" : "277"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#Integration",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Integration",
+      "en" : "Integration"
+    },
+    "subClasses" : [ "262", "43" ],
+    "comment" : {
+      "en" : "An Integration is a connection to external service or resource."
+    },
+    "id" : "44",
+    "superClasses" : [ "24", "26", "72" ]
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#Choice",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Choice",
+      "en" : "Choice"
+    },
+    "comment" : {
+      "en" : "A Choice is a predefined option to Multi-Choice Type question."
+    },
+    "id" : "35",
+    "superClasses" : [ "24", "26" ]
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#ItemListReply",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ItemListReply",
+      "en" : "Item List Reply"
+    },
+    "comment" : {
+      "en" : "An Item List Reply is a type of response that gathers a list of elements in response to a List Item type question."
+    },
+    "id" : "167",
+    "superClasses" : [ "66" ]
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#URLReference",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "URLReference",
+      "en" : "URL Reference"
+    },
+    "comment" : {
+      "undefined" : "An URL Reference provides additional information that can be used to answer a question in form of a URL link to resource."
+    },
+    "id" : "74",
+    "superClasses" : [ "71", "26" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "354",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "355",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "180",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "359",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "187",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "181",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#WidgetIntegration",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WidgetIntegration",
+      "en" : "Widget Integration"
+    },
+    "comment" : {
+      "en" : "A Widget Integration is type of Integration that uses Widget implementation."
+    },
+    "id" : "262",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "330",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "329",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#ValueReply",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ValueReply",
+      "en" : "Value Reply"
+    },
+    "comment" : {
+      "en" : "A Value Reply is a type of response that is given to a Value type question."
+    },
+    "id" : "17",
+    "superClasses" : [ "66" ]
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#Phase",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Phase",
+      "en" : "Phase"
+    },
+    "comment" : {
+      "en" : "A Phase is status of the questionnaire filling process."
+    },
+    "id" : "78",
+    "superClasses" : [ "24", "25", "26" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "361",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#ReportIndication",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ReportIndication",
+      "en" : "Report Indication"
+    },
+    "comment" : {
+      "en" : "A Report Indication is an additional indication for Report Item."
+    },
+    "id" : "38"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "153",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "314",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "363",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "364",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "75",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "82",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "84",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "91",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "93",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "104",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "106",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "107",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "108",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "109",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "111",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "116",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "117",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "120",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "122",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "126",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "127",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "128",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "130",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "131",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "132",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "134",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "136",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "137",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "138",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "139",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "140",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "141",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "142",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "143",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "144",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "146",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "147",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "148",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "149",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "150",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "151",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "154",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "156",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "157",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "158",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "159",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "160",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "162",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "163",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "165",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "166",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "168",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "169",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "170",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "171",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "173",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "174",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "175",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "178",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "179",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "182",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "184",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "186",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "188",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "185",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "191",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "193",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "195",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "196",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "197",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "198",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "200",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "201",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "202",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "203",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "204",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "205",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "206",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "208",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "210",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "183",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "212",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "214",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "215",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "217",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "218",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "220",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "221",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "223",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "229",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "240",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "242",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "243",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "235",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "245",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "247",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "249",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "110",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "251",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "253",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "254",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "256",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "258",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "260",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "261",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "264",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "265",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "231",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "268",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "270",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "271",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "273",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "234",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "190",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "275",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "276",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "278",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "279",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "281",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "283",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "98",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "286",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "287",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "288",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "289",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "290",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "291",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "292",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "293",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "294",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "211",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "295",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "296",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "298",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "299",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "301",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "303",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "305",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "306",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "308",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "310",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "311",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "312",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "313",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "315",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "317",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "309",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "319",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "320",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "248",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "321",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "322",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "233",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "323",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "325",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "327",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "328",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "135",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "331",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "332",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "333",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "334",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "335",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "336",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "337",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "338",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "339",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "340",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "341",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "342",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "343",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "344",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "345",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "347",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "348",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "349",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "83",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "350",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "351",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "352",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "353",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "356",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "357",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "358",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "232",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "244",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "360",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "274",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "362",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "0"
+  }, {
+    "range" : "2",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "3"
+  }, {
+    "range" : "6",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "5"
+  }, {
+    "range" : "9",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "7"
+  }, {
+    "range" : "9",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "10"
+  }, {
+    "range" : "9",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "12"
+  }, {
+    "range" : "9",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#dateTimeReplyValue",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "dateTimeReplyValue",
+      "en" : "DateTime Reply Value"
+    },
+    "maxCardinality" : "1",
+    "domain" : "17",
+    "comment" : {
+      "en" : "A value of the reply in datetime format."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#permission",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "permission",
+      "en" : "Permission"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "A permission of the User in a project."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "19"
+  }, {
+    "range" : "9",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://purl.org/dc/terms/modified",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "modified"
+    },
+    "domain" : "28",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#timeReplyValue",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "timeReplyValue",
+      "en" : "Time Reply Value"
+    },
+    "maxCardinality" : "1",
+    "domain" : "17",
+    "comment" : {
+      "en" : "A value of the reply in time format."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#containsChoice",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "containsChoice",
+      "en" : "Uses Choice"
+    },
+    "superproperty" : [ "36" ],
+    "domain" : "13",
+    "comment" : {
+      "en" : "Choice associated with the MultiChoice Type Question."
+    },
+    "attributes" : [ "object" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#answered",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "answered",
+      "en" : "Answered"
+    },
+    "cardinality" : "1",
+    "domain" : "38",
+    "comment" : {
+      "en" : "The number of answered questions in the section described by the Report Item."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#resultMeasure",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "resultMeasure",
+      "en" : "Result Measure"
+    },
+    "cardinality" : "1",
+    "domain" : "41",
+    "comment" : {
+      "en" : "Result of a section described by the Report Item."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#isCurrentVersionOf",
+    "inverse" : "48",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "isCurrentVersionOf",
+      "en" : "Has Current Version"
+    },
+    "superproperty" : [ "49" ],
+    "cardinality" : "1",
+    "domain" : "46",
+    "comment" : {
+      "en" : "A related QuestionnaireVersion that is a current version of Questionnaire."
+    },
+    "attributes" : [ "object" ],
+    "id" : "45"
+  }, {
+    "range" : "52",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "50"
+  }, {
+    "range" : "52",
+    "domain" : "56",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "55"
+  }, {
+    "range" : "25",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "57"
+  }, {
+    "range" : "25",
+    "domain" : "59",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "58"
+  }, {
+    "range" : "25",
+    "domain" : "61",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "60"
+  }, {
+    "range" : "25",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "62"
+  }, {
+    "range" : "64",
+    "domain" : "47",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#hasReply",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "hasReply",
+      "en" : "Has Reply"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "A response of the question."
+    },
+    "attributes" : [ "object" ],
+    "id" : "65"
+  }, {
+    "range" : "64",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "67"
+  }, {
+    "range" : "64",
+    "domain" : "66",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "68"
+  }, {
+    "range" : "71",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "69"
+  }, {
+    "range" : "71",
+    "domain" : "74",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#indicationType",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "76",
+    "label" : {
+      "IRI-based" : "indicationType",
+      "en" : "Indication Type"
+    },
+    "cardinality" : "1",
+    "domain" : "38",
+    "comment" : {
+      "en" : "Type of indication of a result in a Report."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#isDesiredAtPhase",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "isDesiredAtPhase",
+      "en" : "Is Desired At Phase"
+    },
+    "maxCardinality" : "1",
+    "domain" : "9",
+    "comment" : {
+      "en" : "A Phase associated with the question indicates when the question should be answered."
+    },
+    "attributes" : [ "object" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#updatedAt",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "81",
+    "label" : {
+      "IRI-based" : "updatedAt",
+      "en" : "Updated At"
+    },
+    "cardinality" : "1",
+    "domain" : "80",
+    "comment" : {
+      "en" : "A point of time associated with the last update of the resource."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#isIntegrationOf",
+    "inverse" : "83",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "isIntegrationOf",
+      "en" : "Uses Integration"
+    },
+    "domain" : "44",
+    "comment" : {
+      "en" : "Integration associated with Integration Type Question."
+    },
+    "attributes" : [ "object" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://purl.org/dc/terms/created",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "85",
+    "label" : {
+      "IRI-based" : "created"
+    },
+    "domain" : "28",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#description",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "87",
+    "label" : {
+      "IRI-based" : "description",
+      "en" : "Description"
+    },
+    "maxCardinality" : "1",
+    "cardinality" : "1",
+    "domain" : "25",
+    "comment" : {
+      "en" : "A description of the resource."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "86"
+  }, {
+    "range" : "25",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "88"
+  }, {
+    "range" : "25",
+    "domain" : "78",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "89"
+  }, {
+    "range" : "25",
+    "domain" : "47",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "90"
+  }, {
+    "range" : "25",
+    "domain" : "92",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#urlReplyValue",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "94",
+    "label" : {
+      "IRI-based" : "urlReplyValue",
+      "en" : "URL Reply Value"
+    },
+    "maxCardinality" : "1",
+    "domain" : "17",
+    "comment" : {
+      "en" : "A value of the reply in URL format."
+    },
+    "attributes" : [ "object" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#answerReplyValue",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "answerReplyValue",
+      "en" : "Answer Reply Value"
+    },
+    "maxCardinality" : "1",
+    "minCardinality" : "1",
+    "domain" : "96",
+    "comment" : {
+      "en" : "An Answer as a reply to an Options Type Question."
+    },
+    "attributes" : [ "object" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#isPhaseOf",
+    "inverse" : "98",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "isPhaseOf",
+      "en" : "Is Phase Of"
+    },
+    "domain" : "78",
+    "comment" : {
+      "en" : "A Questionnaire that is in this Phase."
+    },
+    "attributes" : [ "object" ],
+    "id" : "97"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#hasMetricMeasure",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "100",
+    "label" : {
+      "IRI-based" : "hasMetricMeasure",
+      "en" : "Has Metric Measure"
+    },
+    "domain" : "53",
+    "comment" : {
+      "en" : "An effect of the Answer to a certain measure."
+    },
+    "attributes" : [ "object" ],
+    "id" : "99"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#dateReplyValue",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "105",
+    "label" : {
+      "IRI-based" : "dateReplyValue",
+      "en" : "Date Reply Value"
+    },
+    "maxCardinality" : "1",
+    "domain" : "17",
+    "comment" : {
+      "en" : "A value of the reply in date format."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "104"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#containsExpert",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "containsExpert",
+      "en" : "Contains Expert"
+    },
+    "superproperty" : [ "36" ],
+    "domain" : "9",
+    "comment" : {
+      "en" : "An Expert that is an specialist for described Question."
+    },
+    "attributes" : [ "object" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#desiresQuestion",
+    "inverse" : "77",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "desiresQuestion",
+      "en" : "Desires Question"
+    },
+    "domain" : "78",
+    "comment" : {
+      "en" : "A Question that should be answered in this Phase."
+    },
+    "attributes" : [ "object" ],
+    "id" : "107"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#isMetricMeasureOf",
+    "inverse" : "99",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "isMetricMeasureOf",
+      "en" : "Is Metric Measure Of"
+    },
+    "cardinality" : "1",
+    "domain" : "100",
+    "comment" : {
+      "en" : "An Answer that has this metric measure."
+    },
+    "attributes" : [ "object" ],
+    "id" : "108"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#isTagOf",
+    "inverse" : "110",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "isTagOf",
+      "en" : "Is Tag Of"
+    },
+    "domain" : "61",
+    "comment" : {
+      "en" : "Resource that is makred by the tag."
+    },
+    "attributes" : [ "object" ],
+    "id" : "109"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#affiliation",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "113",
+    "label" : {
+      "IRI-based" : "affiliation",
+      "en" : "Affiliation"
+    },
+    "maxCardinality" : "1",
+    "domain" : "112",
+    "comment" : {
+      "en" : "An affiliation of the resource."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "111"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#hasParent",
+    "inverse" : "36",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "hasParent",
+      "en" : "Has Parent"
+    },
+    "cardinality" : "1",
+    "domain" : "24",
+    "comment" : {
+      "en" : "A Parent resource of the described resource."
+    },
+    "attributes" : [ "object" ],
+    "id" : "115"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#containsTag",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "containsTag",
+      "en" : "Contains Tag"
+    },
+    "superproperty" : [ "36" ],
+    "domain" : "92",
+    "comment" : {
+      "en" : "Relation to a tag that the knowledge model contains."
+    },
+    "attributes" : [ "object" ],
+    "id" : "116"
+  }, {
+    "iri" : "http://purl.org/dc/terms/title",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "119",
+    "label" : {
+      "IRI-based" : "title"
+    },
+    "domain" : "118",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "117"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#organizationId",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "121",
+    "label" : {
+      "IRI-based" : "organizationId",
+      "en" : "Organization Identifier"
+    },
+    "cardinality" : "1",
+    "domain" : "114",
+    "comment" : {
+      "en" : "An identification of the Organization."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "120"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#rqEmptySearch",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "123",
+    "label" : {
+      "IRI-based" : "rqEmptySearch",
+      "en" : "Request Empty Search"
+    },
+    "cardinality" : "1",
+    "domain" : "43",
+    "comment" : {
+      "en" : "A empty query is possible to make for an external resource."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "122"
+  }, {
+    "range" : "26",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "125"
+  }, {
+    "range" : "26",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "126"
+  }, {
+    "range" : "26",
+    "domain" : "78",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "127"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#abbreviation",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "129",
+    "label" : {
+      "IRI-based" : "abbreviation",
+      "en" : "Abbreviation"
+    },
+    "maxCardinality" : "1",
+    "domain" : "23",
+    "comment" : {
+      "en" : "Abbreviation title."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "128"
+  }, {
+    "range" : "26",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "130"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#containsFollowupQuestion",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "containsFollowupQuestion",
+      "en" : "Contains Followup Question"
+    },
+    "domain" : "53",
+    "comment" : {
+      "en" : "A Followup Question of this Answer."
+    },
+    "attributes" : [ "object" ],
+    "id" : "131"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#lastName",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "133",
+    "label" : {
+      "IRI-based" : "lastName",
+      "en" : "Last Name"
+    },
+    "cardinality" : "1",
+    "domain" : "4",
+    "comment" : {
+      "en" : "The Last Name of the User."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "132"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#hasDocument",
+    "inverse" : "135",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "103",
+    "label" : {
+      "IRI-based" : "hasDocument",
+      "en" : "Has Document"
+    },
+    "domain" : "47",
+    "comment" : {
+      "en" : "A Document that describes this Questionnaire."
+    },
+    "attributes" : [ "object" ],
+    "id" : "134"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#hasResult",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "hasResult",
+      "en" : "Has Result"
+    },
+    "domain" : "52",
+    "comment" : {
+      "en" : "A result of the Report Item."
+    },
+    "attributes" : [ "object" ],
+    "id" : "136"
+  }, {
+    "range" : "24",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "137"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#usesKnowledgeModel",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "usesKnowledgeModel",
+      "en" : "Uses Knowledge Model"
+    },
+    "cardinality" : "1",
+    "domain" : "47",
+    "comment" : {
+      "en" : "A Knowledge Model that this Questionnaire is based on."
+    },
+    "attributes" : [ "object" ],
+    "id" : "138"
+  }, {
+    "range" : "24",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "139"
+  }, {
+    "range" : "24",
+    "domain" : "59",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "140"
+  }, {
+    "range" : "24",
+    "domain" : "61",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "141"
+  }, {
+    "range" : "24",
+    "domain" : "53",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "142"
+  }, {
+    "range" : "26",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "143"
+  }, {
+    "range" : "24",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "144"
+  }, {
+    "range" : "24",
+    "domain" : "71",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "146"
+  }, {
+    "range" : "24",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "147"
+  }, {
+    "range" : "24",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "148"
+  }, {
+    "range" : "24",
+    "domain" : "78",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "149"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#hasIndication",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "hasIndication",
+      "en" : "Has Indication"
+    },
+    "domain" : "52",
+    "comment" : {
+      "en" : "A connection to an indication of results in the Report Item."
+    },
+    "attributes" : [ "object" ],
+    "id" : "150"
+  }, {
+    "iri" : "http://purl.org/dc/terms/identifier",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "153",
+    "label" : {
+      "IRI-based" : "identifier"
+    },
+    "domain" : "152",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "151"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#rqUrl",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "155",
+    "label" : {
+      "IRI-based" : "rqUrl",
+      "en" : "Request URL"
+    },
+    "cardinality" : "1",
+    "domain" : "43",
+    "comment" : {
+      "en" : "A scheme of a Request URL adress of an external resource."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "154"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#isAboutChapter",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "59",
+    "label" : {
+      "IRI-based" : "isAboutChapter",
+      "en" : "Is About Chapter"
+    },
+    "cardinality" : "1",
+    "domain" : "56",
+    "comment" : {
+      "en" : "A connection to a Chapter that this Report Item is about."
+    },
+    "attributes" : [ "object" ],
+    "id" : "156"
+  }, {
+    "range" : "54",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "157"
+  }, {
+    "range" : "54",
+    "domain" : "92",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "158"
+  }, {
+    "range" : "54",
+    "domain" : "59",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "159"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#role",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "161",
+    "label" : {
+      "IRI-based" : "role",
+      "en" : "Role"
+    },
+    "maxCardinality" : "1",
+    "domain" : "4",
+    "comment" : {
+      "en" : "A project role of the User."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "160"
+  }, {
+    "range" : "54",
+    "domain" : "53",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "162"
+  }, {
+    "range" : "164",
+    "domain" : "114",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "163"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#hasContextConfig",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "145",
+    "label" : {
+      "IRI-based" : "hasContextConfig",
+      "en" : "Has Context Configuration"
+    },
+    "cardinality" : "1",
+    "domain" : "103",
+    "comment" : {
+      "en" : "A related additional information about configuration."
+    },
+    "attributes" : [ "object" ],
+    "id" : "165"
+  }, {
+    "range" : "66",
+    "domain" : "167",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "166"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#containsIntegration",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "containsIntegration",
+      "en" : "Contains Integration"
+    },
+    "superproperty" : [ "36" ],
+    "domain" : "92",
+    "comment" : {
+      "en" : "Relation to an integration that the knowledge model contains."
+    },
+    "attributes" : [ "object" ],
+    "id" : "168"
+  }, {
+    "range" : "66",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "169"
+  }, {
+    "range" : "66",
+    "domain" : "96",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "170"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#rqMethod",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "172",
+    "label" : {
+      "IRI-based" : "rqMethod",
+      "en" : "Request Method"
+    },
+    "cardinality" : "1",
+    "domain" : "43",
+    "comment" : {
+      "en" : "A HTTP Method of an external resource."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "171"
+  }, {
+    "range" : "66",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "173"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#isResultOf",
+    "inverse" : "136",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "isResultOf",
+      "en" : "Is Result Of"
+    },
+    "cardinality" : "1",
+    "domain" : "41",
+    "comment" : {
+      "en" : "A Report Item that this result is about."
+    },
+    "attributes" : [ "object" ],
+    "id" : "174"
+  }, {
+    "range" : "31",
+    "domain" : "176",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "175"
+  }, {
+    "range" : "31",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "178"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/firstName",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "181",
+    "label" : {
+      "IRI-based" : "firstName"
+    },
+    "domain" : "180",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "179"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#isVersionOf",
+    "inverse" : "183",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "isVersionOf",
+      "en" : "Has Version"
+    },
+    "superproperty" : [ "49" ],
+    "cardinality" : "1",
+    "domain" : "46",
+    "comment" : {
+      "en" : "A related QuestionnaireVersion that is a version of Questionnaire."
+    },
+    "attributes" : [ "object" ],
+    "id" : "182"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/made",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "180",
+    "label" : {
+      "IRI-based" : "made"
+    },
+    "domain" : "180",
+    "subproperty" : [ "185" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "184"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#altLabel",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "187",
+    "label" : {
+      "IRI-based" : "altLabel"
+    },
+    "domain" : "180",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "186"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#reportItemId",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "189",
+    "label" : {
+      "IRI-based" : "reportItemId",
+      "en" : "Report Item Identifier"
+    },
+    "cardinality" : "1",
+    "domain" : "52",
+    "comment" : {
+      "en" : "Identification of the Report Item."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "188"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#creatorOf",
+    "inverse" : "190",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "creatorOf",
+      "en" : "Creator Of"
+    },
+    "superproperty" : [ "184" ],
+    "domain" : "4",
+    "comment" : {
+      "en" : "An resource that the User is responsible of making."
+    },
+    "attributes" : [ "object" ],
+    "id" : "185"
+  }, {
+    "range" : "192",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "191"
+  }, {
+    "range" : "194",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "193"
+  }, {
+    "range" : "194",
+    "domain" : "92",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "195"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#containsItemTemplFollowupQuestion",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "containsItemTemplFollowupQuestion",
+      "en" : "Contains Item Template Followup Question"
+    },
+    "superproperty" : [ "36" ],
+    "domain" : "22",
+    "comment" : {
+      "en" : "Followup question to the described Question."
+    },
+    "attributes" : [ "object" ],
+    "id" : "196"
+  }, {
+    "range" : "66",
+    "domain" : "124",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "197"
+  }, {
+    "range" : "199",
+    "domain" : "66",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "198"
+  }, {
+    "range" : "199",
+    "domain" : "80",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "200"
+  }, {
+    "range" : "80",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "201"
+  }, {
+    "range" : "80",
+    "domain" : "102",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "202"
+  }, {
+    "range" : "80",
+    "domain" : "103",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "203"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#imageUrl",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "94",
+    "label" : {
+      "IRI-based" : "imageUrl",
+      "en" : "Image URL"
+    },
+    "maxCardinality" : "1",
+    "domain" : "4",
+    "comment" : {
+      "en" : "An URL of Image of the User."
+    },
+    "attributes" : [ "object" ],
+    "id" : "204"
+  }, {
+    "range" : "80",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "205"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#createdAt",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "207",
+    "label" : {
+      "IRI-based" : "createdAt",
+      "en" : "Created At"
+    },
+    "cardinality" : "1",
+    "domain" : "199",
+    "comment" : {
+      "en" : "A point of time associated with creation of the resource."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "206"
+  }, {
+    "range" : "209",
+    "domain" : "92",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "208"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#multiChoiceReplyValue",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "multiChoiceReplyValue",
+      "en" : "MultiChoice Reply Value"
+    },
+    "domain" : "124",
+    "comment" : {
+      "en" : "A Choice as a reply to a MultiChoice Type Question."
+    },
+    "attributes" : [ "object" ],
+    "id" : "210"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#hasVersion",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "hasVersion",
+      "en" : "Has Version"
+    },
+    "superproperty" : [ "211" ],
+    "domain" : "47",
+    "comment" : {
+      "en" : "A related QuestionnaireVersion that is a version of the Questionnaire."
+    },
+    "attributes" : [ "object" ],
+    "id" : "183"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#numberReplyValue",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "213",
+    "label" : {
+      "IRI-based" : "numberReplyValue",
+      "en" : "Number Reply Value"
+    },
+    "maxCardinality" : "1",
+    "domain" : "17",
+    "comment" : {
+      "en" : "A value of the reply in numeric format."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "212"
+  }, {
+    "range" : "112",
+    "domain" : "114",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "214"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#title",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "216",
+    "label" : {
+      "IRI-based" : "title",
+      "en" : "Title"
+    },
+    "cardinality" : "1",
+    "domain" : "26",
+    "comment" : {
+      "en" : "A name of a the resource."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "215"
+  }, {
+    "range" : "112",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "217"
+  }, {
+    "range" : "199",
+    "domain" : "92",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "218"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#hasKnowledgeModel",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "hasKnowledgeModel",
+      "en" : "Has Knowledge Model"
+    },
+    "cardinality" : "1",
+    "domain" : "103",
+    "comment" : {
+      "en" : "A related Knowledge Model that is the base of Questionnaire that this Document describes."
+    },
+    "attributes" : [ "object" ],
+    "id" : "220"
+  }, {
+    "iri" : "http://purl.org/dc/terms/isVersionOf",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "isVersionOf"
+    },
+    "domain" : "28",
+    "subproperty" : [ "182", "45" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "49"
+  }, {
+    "iri" : "https://schema.org/email",
+    "baseIri" : "https://schema.org",
+    "range" : "222",
+    "label" : {
+      "IRI-based" : "email"
+    },
+    "domain" : "28",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "221"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#color",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "224",
+    "label" : {
+      "IRI-based" : "color",
+      "en" : "Color"
+    },
+    "cardinality" : "1",
+    "domain" : "61",
+    "comment" : {
+      "en" : "Association with a color."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "223"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#weight",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "230",
+    "label" : {
+      "IRI-based" : "weight",
+      "en" : "Weight"
+    },
+    "cardinality" : "1",
+    "domain" : "100",
+    "comment" : {
+      "en" : "An importance of a metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "229"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#containsChild",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "containsChild",
+      "en" : "Contains Child"
+    },
+    "domain" : "54",
+    "subproperty" : [ "168", "231", "34", "232", "106", "233", "234", "235", "116", "196" ],
+    "comment" : {
+      "en" : "A Child resource of the described resource."
+    },
+    "attributes" : [ "object" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#rsListField",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "241",
+    "label" : {
+      "IRI-based" : "rsListField",
+      "en" : "Response List Field"
+    },
+    "cardinality" : "1",
+    "domain" : "43",
+    "comment" : {
+      "en" : "A path to list of elements in an external resource."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "240"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#isReplyTo",
+    "inverse" : "65",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "isReplyTo",
+      "en" : "Is Reply To"
+    },
+    "cardinality" : "1",
+    "domain" : "66",
+    "comment" : {
+      "en" : "A question to which the reply relates."
+    },
+    "attributes" : [ "object" ],
+    "id" : "242"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#isOrganizationOfDocument",
+    "inverse" : "244",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "103",
+    "label" : {
+      "IRI-based" : "isOrganizationOfDocument",
+      "en" : "Has Organization"
+    },
+    "domain" : "114",
+    "comment" : {
+      "en" : "A Document that describes Questionnaire of this Organization."
+    },
+    "attributes" : [ "object" ],
+    "id" : "243"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#containsChapter",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "59",
+    "label" : {
+      "IRI-based" : "containsChapter",
+      "en" : "Contains Chapter"
+    },
+    "superproperty" : [ "36" ],
+    "domain" : "92",
+    "comment" : {
+      "en" : "Relation to a chapter that the knowledge model contains."
+    },
+    "attributes" : [ "object" ],
+    "id" : "235"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#knowledgeModelId",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "246",
+    "label" : {
+      "IRI-based" : "knowledgeModelId",
+      "en" : "Knowledge Model Identifier"
+    },
+    "cardinality" : "1",
+    "domain" : "92",
+    "comment" : {
+      "en" : "An identification of a knowledge model."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "245"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#isChapterReportOf",
+    "inverse" : "248",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "102",
+    "label" : {
+      "IRI-based" : "isChapterReportOf",
+      "en" : "Is Chapter Report Of"
+    },
+    "cardinality" : "1",
+    "domain" : "56",
+    "comment" : {
+      "en" : "A connection of the Chapter Report to a Report."
+    },
+    "attributes" : [ "object" ],
+    "id" : "247"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#advice",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "250",
+    "label" : {
+      "IRI-based" : "advice",
+      "en" : "Advice"
+    },
+    "maxCardinality" : "1",
+    "domain" : "53",
+    "comment" : {
+      "en" : "An advice about the answer."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "249"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#hasTag",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "hasTag",
+      "en" : "Has Tag"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "A Tag that marks described resource."
+    },
+    "attributes" : [ "object" ],
+    "id" : "110"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/lastName",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "252",
+    "label" : {
+      "IRI-based" : "lastName"
+    },
+    "domain" : "28",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "251"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#isKnowledgeModelOfDocument",
+    "inverse" : "220",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "103",
+    "label" : {
+      "IRI-based" : "isKnowledgeModelOfDocument",
+      "en" : "Is Knowledge Model of Document"
+    },
+    "domain" : "92",
+    "comment" : {
+      "en" : "A connection to the Document that contains Questionnaire that is based on the Knowledge Model."
+    },
+    "attributes" : [ "object" ],
+    "id" : "253"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#rsItemTemplate",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "255",
+    "label" : {
+      "IRI-based" : "rsItemTemplate",
+      "en" : "Response Item Template"
+    },
+    "cardinality" : "1",
+    "domain" : "43",
+    "comment" : {
+      "en" : "A teplate of displaying an element from an external resource."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "254"
+  }, {
+    "iri" : "https://schema.org/version",
+    "baseIri" : "https://schema.org",
+    "range" : "257",
+    "label" : {
+      "IRI-based" : "version"
+    },
+    "domain" : "28",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "256"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#source",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "259",
+    "label" : {
+      "IRI-based" : "source",
+      "en" : "Source"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "A source of the User."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "258"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#hasParent",
+    "inverse" : "36",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "hasParent",
+      "en" : "Has Parent"
+    },
+    "domain" : "71",
+    "comment" : {
+      "en" : "A Parent resource of the described resource."
+    },
+    "attributes" : [ "allValues", "object" ],
+    "id" : "260"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#widgetUrl",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "263",
+    "label" : {
+      "IRI-based" : "widgetUrl",
+      "en" : "Widget URL"
+    },
+    "cardinality" : "1",
+    "domain" : "262",
+    "comment" : {
+      "en" : "A scheme of a Widget URL link of an external resource."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "261"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#hasParent",
+    "inverse" : "36",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "hasParent",
+      "en" : "Has Parent"
+    },
+    "domain" : "61",
+    "comment" : {
+      "en" : "A Parent resource of the described resource."
+    },
+    "attributes" : [ "allValues", "object" ],
+    "id" : "264"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#valueType",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "266",
+    "label" : {
+      "IRI-based" : "valueType",
+      "en" : "Value Type"
+    },
+    "cardinality" : "1",
+    "domain" : "8",
+    "comment" : {
+      "en" : "Type of reply value of the Value Type Question."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "265"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#containsAnswer",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "containsAnswer",
+      "en" : "Contains Answer"
+    },
+    "superproperty" : [ "36" ],
+    "domain" : "15",
+    "comment" : {
+      "en" : "Possible answer associated with the Options type Question."
+    },
+    "attributes" : [ "object" ],
+    "id" : "231"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#path",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "269",
+    "label" : {
+      "IRI-based" : "path",
+      "en" : "Path"
+    },
+    "cardinality" : "1",
+    "domain" : "66",
+    "comment" : {
+      "en" : "An identifying path of a reply, that consists of the identification of the chapter, questions, and possibly answers."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "268"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#isChoiceToReply",
+    "inverse" : "210",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "124",
+    "label" : {
+      "IRI-based" : "isChoiceToReply",
+      "en" : "Is Choice To Reply"
+    },
+    "domain" : "35",
+    "comment" : {
+      "en" : "A Reply that contains this Choice."
+    },
+    "attributes" : [ "object" ],
+    "id" : "270"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#replyValue",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "272",
+    "label" : {
+      "IRI-based" : "replyValue",
+      "en" : "Reply Value"
+    },
+    "maxCardinality" : "1",
+    "domain" : "66",
+    "comment" : {
+      "en" : "A value of the reply."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "271"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#firstName",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "236",
+    "label" : {
+      "IRI-based" : "firstName",
+      "en" : "First Name"
+    },
+    "cardinality" : "1",
+    "domain" : "4",
+    "comment" : {
+      "en" : "The First Name of the User."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "273"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#containsMetric",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "containsMetric",
+      "en" : "Contains Metric"
+    },
+    "superproperty" : [ "36" ],
+    "domain" : "92",
+    "comment" : {
+      "en" : "Relation to a metric that the knowledge model contains."
+    },
+    "attributes" : [ "object" ],
+    "id" : "234"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#isCreatedBy",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "isCreatedBy",
+      "en" : "Is Created By"
+    },
+    "superproperty" : [ "274" ],
+    "maxCardinality" : "1",
+    "cardinality" : "1",
+    "domain" : "64",
+    "comment" : {
+      "en" : "An user responsible for making the resource."
+    },
+    "attributes" : [ "object" ],
+    "id" : "190"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#isAnswerToReply",
+    "inverse" : "95",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "96",
+    "label" : {
+      "IRI-based" : "isAnswerToReply",
+      "en" : "Is Answer To Reply"
+    },
+    "maxCardinality" : "1",
+    "domain" : "53",
+    "comment" : {
+      "en" : "A Reply that contains this Answer."
+    },
+    "attributes" : [ "object" ],
+    "id" : "275"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#annotation",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "277",
+    "label" : {
+      "IRI-based" : "annotation",
+      "en" : "Annotation"
+    },
+    "domain" : "194",
+    "comment" : {
+      "en" : "An additional information about the resource."
+    },
+    "attributes" : [ "object" ],
+    "id" : "276"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#integrationReplyItem",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "219",
+    "label" : {
+      "IRI-based" : "integrationReplyItem",
+      "en" : "Integration Reply Item"
+    },
+    "cardinality" : "1",
+    "domain" : "30",
+    "comment" : {
+      "en" : "An item of the external resource as the reply to an Integration Type Question."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "278"
+  }, {
+    "range" : "44",
+    "domain" : "43",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "279"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#measure",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "282",
+    "label" : {
+      "IRI-based" : "measure",
+      "en" : "Measure"
+    },
+    "cardinality" : "1",
+    "domain" : "100",
+    "comment" : {
+      "en" : "A measure impact to a metric."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "281"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/logo",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "284",
+    "label" : {
+      "IRI-based" : "logo"
+    },
+    "domain" : "118",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "283"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#hasPhase",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "hasPhase",
+      "en" : "Has Phase"
+    },
+    "maxCardinality" : "1",
+    "domain" : "47",
+    "comment" : {
+      "en" : "A related phase that the Questionnaire is in."
+    },
+    "attributes" : [ "object" ],
+    "id" : "98"
+  }, {
+    "range" : "177",
+    "domain" : "100",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "286"
+  }, {
+    "range" : "177",
+    "domain" : "41",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "287"
+  }, {
+    "range" : "44",
+    "domain" : "262",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "288"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#entryValue",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "227",
+    "label" : {
+      "IRI-based" : "entryValue",
+      "en" : "Entry Value"
+    },
+    "cardinality" : "1",
+    "domain" : "277",
+    "comment" : {
+      "en" : "The entry value of the dictionary element."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "289"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#eventUuid",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "226",
+    "label" : {
+      "IRI-based" : "eventUuid",
+      "en" : "Event UUID"
+    },
+    "cardinality" : "1",
+    "domain" : "46",
+    "comment" : {
+      "en" : "An UUID of Event that creates QuestionnaireVersion."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "290"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#email",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "239",
+    "label" : {
+      "IRI-based" : "email",
+      "en" : "E-mail"
+    },
+    "maxCardinality" : "1",
+    "cardinality" : "1",
+    "domain" : "2",
+    "comment" : {
+      "en" : "A contact e-mail adress of the resource."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "291"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#shorUuid",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "267",
+    "label" : {
+      "IRI-based" : "shorUuid",
+      "en" : "Short Universally Unique Identifier"
+    },
+    "cardinality" : "1",
+    "domain" : "70",
+    "comment" : {
+      "en" : "An Identification of a chapter in a book of a reference."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "292"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#isIndicationOf",
+    "inverse" : "150",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "isIndicationOf",
+      "en" : "Is Indication Of"
+    },
+    "cardinality" : "1",
+    "domain" : "38",
+    "comment" : {
+      "en" : "A connection a part of Result that the indication is about."
+    },
+    "attributes" : [ "object" ],
+    "id" : "293"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#rqBody",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "285",
+    "label" : {
+      "IRI-based" : "rqBody",
+      "en" : "Request Body"
+    },
+    "cardinality" : "1",
+    "domain" : "43",
+    "comment" : {
+      "en" : "A HTTP Request Body of an external resource."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "294"
+  }, {
+    "iri" : "http://purl.org/dc/terms/hasVersion",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "118",
+    "label" : {
+      "IRI-based" : "hasVersion"
+    },
+    "domain" : "118",
+    "subproperty" : [ "183", "48" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "211"
+  }, {
+    "range" : "26",
+    "domain" : "47",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "295"
+  }, {
+    "range" : "26",
+    "domain" : "74",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "296"
+  }, {
+    "range" : "26",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "298"
+  }, {
+    "range" : "26",
+    "domain" : "59",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "299"
+  }, {
+    "range" : "26",
+    "domain" : "61",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "301"
+  }, {
+    "range" : "26",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "303"
+  }, {
+    "range" : "26",
+    "domain" : "53",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "305"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#prop",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "304",
+    "label" : {
+      "IRI-based" : "prop",
+      "en" : "Prop"
+    },
+    "domain" : "72",
+    "comment" : {
+      "en" : "The support variables in a query of the described resource."
+    },
+    "attributes" : [ "object" ],
+    "id" : "306"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#isTotalReportOf",
+    "inverse" : "309",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "102",
+    "label" : {
+      "IRI-based" : "isTotalReportOf",
+      "en" : "Has Total Report"
+    },
+    "cardinality" : "1",
+    "domain" : "51",
+    "comment" : {
+      "en" : "A connection of the Total Report to a Report."
+    },
+    "attributes" : [ "object" ],
+    "id" : "308"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#containsQuestion",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "containsQuestion",
+      "en" : "Contains Question"
+    },
+    "domain" : "59",
+    "comment" : {
+      "en" : "Relation to a question that the chapter contains."
+    },
+    "attributes" : [ "object" ],
+    "id" : "310"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#hasMetric",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "hasMetric",
+      "en" : "Has Metric"
+    },
+    "cardinality" : "1",
+    "domain" : "177",
+    "comment" : {
+      "en" : "A connection of the described resource to the metric that is used for evaluation within the report."
+    },
+    "attributes" : [ "object" ],
+    "id" : "311"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#itemUrl",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "300",
+    "label" : {
+      "IRI-based" : "itemUrl",
+      "en" : "Item URL"
+    },
+    "cardinality" : "1",
+    "domain" : "44",
+    "comment" : {
+      "en" : "A scheme of an URL adress of an element of an external resource."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "312"
+  }, {
+    "iri" : "https://schema.org/url",
+    "baseIri" : "https://schema.org",
+    "range" : "314",
+    "label" : {
+      "IRI-based" : "url"
+    },
+    "domain" : "152",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "313"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#isMetricOf",
+    "inverse" : "311",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "177",
+    "label" : {
+      "IRI-based" : "isMetricOf",
+      "en" : "Is Metric Of"
+    },
+    "domain" : "23",
+    "comment" : {
+      "en" : "Connection to a resource that the metric measures."
+    },
+    "attributes" : [ "object" ],
+    "id" : "315"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#hasProjectTag",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "228",
+    "label" : {
+      "IRI-based" : "hasProjectTag",
+      "en" : "Has Project Tag"
+    },
+    "domain" : "47",
+    "comment" : {
+      "en" : "A label of the project Questionnaire."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "317"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#hasTotalReport",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "hasTotalReport",
+      "en" : "Has Total Report"
+    },
+    "cardinality" : "1",
+    "domain" : "102",
+    "comment" : {
+      "en" : "A connection of the Report to a Total Report."
+    },
+    "attributes" : [ "object" ],
+    "id" : "309"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#entryKey",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "238",
+    "label" : {
+      "IRI-based" : "entryKey",
+      "en" : "Key Value"
+    },
+    "cardinality" : "1",
+    "domain" : "277",
+    "comment" : {
+      "en" : "The key value of the dictionary element."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "319"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#documentTemplateMetamodelVersion",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "237",
+    "label" : {
+      "IRI-based" : "documentTemplateMetamodelVersion",
+      "en" : "Document Template Metamodel Version."
+    },
+    "cardinality" : "1",
+    "domain" : "145",
+    "attributes" : [ "datatype" ],
+    "id" : "320"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#hasChapterReport",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "hasChapterReport",
+      "en" : "Has Chapter Report"
+    },
+    "domain" : "102",
+    "comment" : {
+      "en" : "A connection of the Report to a Chapter Report."
+    },
+    "attributes" : [ "object" ],
+    "id" : "248"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#order",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "297",
+    "label" : {
+      "IRI-based" : "order",
+      "en" : "Order"
+    },
+    "cardinality" : "1",
+    "domain" : "24",
+    "comment" : {
+      "en" : "The order of occurence of the described resource in parent resource."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "321"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#clientUrl",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "94",
+    "label" : {
+      "IRI-based" : "clientUrl",
+      "en" : "Client URL"
+    },
+    "cardinality" : "1",
+    "domain" : "145",
+    "comment" : {
+      "en" : "An URL of DSW instance of Organization."
+    },
+    "attributes" : [ "object" ],
+    "id" : "322"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#containsReference",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "71",
+    "label" : {
+      "IRI-based" : "containsReference",
+      "en" : "Contains Reference"
+    },
+    "superproperty" : [ "36" ],
+    "domain" : "9",
+    "comment" : {
+      "en" : "An external resource that provides additional information about described resource."
+    },
+    "attributes" : [ "object" ],
+    "id" : "233"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#isContextConfigOfDocument",
+    "inverse" : "165",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "103",
+    "label" : {
+      "IRI-based" : "isContextConfigOfDocument",
+      "en" : "Is Context Configuration Of Document"
+    },
+    "domain" : "145",
+    "comment" : {
+      "en" : "A Document that describes DSW instance with this additional information."
+    },
+    "attributes" : [ "object" ],
+    "id" : "323"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#unanswered",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "326",
+    "label" : {
+      "IRI-based" : "unanswered",
+      "en" : "Unswered"
+    },
+    "cardinality" : "1",
+    "domain" : "38",
+    "comment" : {
+      "en" : "The number of unanswered questions in a section described by the Report Item."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "325"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#referenceUrl",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "94",
+    "label" : {
+      "IRI-based" : "referenceUrl",
+      "en" : "Reference URL"
+    },
+    "cardinality" : "1",
+    "domain" : "74",
+    "comment" : {
+      "en" : "An URL link to the reference."
+    },
+    "attributes" : [ "object" ],
+    "id" : "327"
+  }, {
+    "iri" : "http://purl.org/dc/terms/description",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "330",
+    "label" : {
+      "IRI-based" : "description"
+    },
+    "domain" : "329",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "328"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#hasCurrentVersion",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "hasCurrentVersion",
+      "en" : "Has Current Version"
+    },
+    "superproperty" : [ "211" ],
+    "cardinality" : "1",
+    "domain" : "47",
+    "comment" : {
+      "en" : "A related QuestionnaireVersion that is a current version of the Questionnaire."
+    },
+    "attributes" : [ "object" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#hasQuestionnaire",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "hasQuestionnaire",
+      "en" : "Has Questionnaire"
+    },
+    "cardinality" : "1",
+    "domain" : "103",
+    "comment" : {
+      "en" : "A related Questionnaire that described final document uses."
+    },
+    "attributes" : [ "object" ],
+    "id" : "135"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#integrationReplyValue",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "94",
+    "label" : {
+      "IRI-based" : "integrationReplyValue",
+      "en" : "Integration Reply Value"
+    },
+    "cardinality" : "1",
+    "domain" : "30",
+    "comment" : {
+      "en" : "A value of the reply to an Integration Type Question."
+    },
+    "attributes" : [ "object" ],
+    "id" : "331"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#hasReport",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "102",
+    "label" : {
+      "IRI-based" : "hasReport",
+      "en" : "Has Report"
+    },
+    "cardinality" : "1",
+    "domain" : "103",
+    "comment" : {
+      "en" : "A related Report of Questionnaire that the document describes."
+    },
+    "attributes" : [ "object" ],
+    "id" : "332"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#rqHeader",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "277",
+    "label" : {
+      "IRI-based" : "rqHeader",
+      "en" : "Request Header"
+    },
+    "domain" : "43",
+    "comment" : {
+      "en" : "A HTTP Request Header of an external resource."
+    },
+    "attributes" : [ "object" ],
+    "id" : "333"
+  }, {
+    "range" : "101",
+    "domain" : "102",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "334"
+  }, {
+    "range" : "101",
+    "domain" : "92",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "335"
+  }, {
+    "range" : "25",
+    "domain" : "114",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "336"
+  }, {
+    "range" : "101",
+    "domain" : "103",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "337"
+  }, {
+    "range" : "101",
+    "domain" : "71",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "338"
+  }, {
+    "range" : "101",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "339"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#integrationId",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "225",
+    "label" : {
+      "IRI-based" : "integrationId",
+      "en" : "Integration ID"
+    },
+    "cardinality" : "1",
+    "domain" : "44",
+    "comment" : {
+      "en" : "An Identification of an integration."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "340"
+  }, {
+    "range" : "101",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "341"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#hasParent",
+    "inverse" : "36",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "hasParent",
+      "en" : "Has Parent"
+    },
+    "domain" : "35",
+    "comment" : {
+      "en" : "A Parent resource of the described resource."
+    },
+    "attributes" : [ "allValues", "object" ],
+    "id" : "342"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#hasParent",
+    "inverse" : "36",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "hasParent",
+      "en" : "Has Parent"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "A Parent resource of the described resource."
+    },
+    "attributes" : [ "allValues", "object" ],
+    "id" : "343"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#hasParent",
+    "inverse" : "36",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "hasParent",
+      "en" : "Has Parent"
+    },
+    "domain" : "44",
+    "comment" : {
+      "en" : "A Parent resource of the described resource."
+    },
+    "attributes" : [ "allValues", "object" ],
+    "id" : "344"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#prop",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "346",
+    "label" : {
+      "IRI-based" : "prop",
+      "en" : "Prop"
+    },
+    "domain" : "44",
+    "comment" : {
+      "en" : "The support variables in a query of the described resource."
+    },
+    "attributes" : [ "allValues", "object", "datatype" ],
+    "id" : "345"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#prop",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "277",
+    "label" : {
+      "IRI-based" : "prop",
+      "en" : "Prop"
+    },
+    "domain" : "11",
+    "comment" : {
+      "en" : "The support variables in a query of the described resource."
+    },
+    "attributes" : [ "allValues", "object" ],
+    "id" : "347"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#logo",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "302",
+    "label" : {
+      "IRI-based" : "logo",
+      "en" : "Logo"
+    },
+    "cardinality" : "1",
+    "domain" : "44",
+    "comment" : {
+      "en" : "A logo of the integration."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "348"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#hasParent",
+    "inverse" : "36",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "hasParent",
+      "en" : "Has Parent"
+    },
+    "domain" : "23",
+    "comment" : {
+      "en" : "A Parent resource of the described resource."
+    },
+    "attributes" : [ "allValues", "object" ],
+    "id" : "349"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#hasIntegration",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "hasIntegration",
+      "en" : "Has Integration"
+    },
+    "cardinality" : "1",
+    "domain" : "11",
+    "comment" : {
+      "en" : "Integration associated with the Integration Type Question."
+    },
+    "attributes" : [ "object" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#hasParent",
+    "inverse" : "36",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "hasParent",
+      "en" : "Has Parent"
+    },
+    "domain" : "78",
+    "comment" : {
+      "en" : "A Parent resource of the described resource."
+    },
+    "attributes" : [ "allValues", "object" ],
+    "id" : "350"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#rsItemId",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "280",
+    "label" : {
+      "IRI-based" : "rsItemId",
+      "en" : "Response Item Id"
+    },
+    "cardinality" : "1",
+    "domain" : "43",
+    "comment" : {
+      "en" : "An identification of an element in an external resource."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "351"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#hasParent",
+    "inverse" : "36",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "hasParent",
+      "en" : "Has Parent"
+    },
+    "domain" : "53",
+    "comment" : {
+      "en" : "A Parent resource of the described resource."
+    },
+    "attributes" : [ "allValues", "object" ],
+    "id" : "352"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#hasParent",
+    "inverse" : "36",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "hasParent",
+      "en" : "Has Parent"
+    },
+    "domain" : "59",
+    "comment" : {
+      "en" : "A Parent resource of the described resource."
+    },
+    "attributes" : [ "allValues", "object" ],
+    "id" : "353"
+  }, {
+    "range" : "72",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "356"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#version",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "318",
+    "label" : {
+      "IRI-based" : "version",
+      "en" : "version"
+    },
+    "cardinality" : "1",
+    "domain" : "92",
+    "comment" : {
+      "en" : "Identification of a related version of described resource."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "357"
+  }, {
+    "range" : "72",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "358"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#containsPhase",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "containsPhase",
+      "en" : "Contains Phase"
+    },
+    "superproperty" : [ "36" ],
+    "domain" : "92",
+    "comment" : {
+      "en" : "Relation to a phase that the knowledge model contains."
+    },
+    "attributes" : [ "object" ],
+    "id" : "232"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#hasOrganization",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "114",
+    "label" : {
+      "IRI-based" : "hasOrganization",
+      "en" : "Has Organization"
+    },
+    "cardinality" : "1",
+    "domain" : "103",
+    "comment" : {
+      "en" : "A related Organization that has the instance of DSW with Questionnaire that this Document describes."
+    },
+    "attributes" : [ "object" ],
+    "id" : "244"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#isReportOfDocument",
+    "inverse" : "332",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "103",
+    "label" : {
+      "IRI-based" : "isReportOfDocument",
+      "en" : "Has Report"
+    },
+    "domain" : "102",
+    "comment" : {
+      "en" : "A document that describes a Questionnaire that this Report is about."
+    },
+    "attributes" : [ "object" ],
+    "id" : "360"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/maker",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "354",
+    "label" : {
+      "IRI-based" : "maker"
+    },
+    "domain" : "354",
+    "subproperty" : [ "190" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "274"
+  }, {
+    "iri" : "http://ontology.ds-wizard.org/dsw-ontology#uuid",
+    "baseIri" : "http://ontology.ds-wizard.org/dsw-ontology",
+    "range" : "324",
+    "label" : {
+      "IRI-based" : "uuid",
+      "en" : "Universally Unique Identifier"
+    },
+    "cardinality" : "1",
+    "domain" : "101",
+    "comment" : {
+      "en" : "Universally Unique Identifier of the resource."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "362"
+  } ]
+}

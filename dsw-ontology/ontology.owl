@@ -1,0 +1,3068 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://ontology.ds-wizard.org/dsw-ontology#"
+     xml:base="http://ontology.ds-wizard.org/dsw-ontology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://ontology.ds-wizard.org/dsw-ontology#">
+        <owl:versionIRI rdf:resource="http://ontology.ds-wizard.org/dsw-ontology/2024-01#"/>
+        <terms:creator>Jana Martínková</terms:creator>
+        <terms:hasVersion>2024-01</terms:hasVersion>
+        <terms:rights>https://creativecommons.org/licenses/by-sa/4.0/</terms:rights>
+        <vann:preferredNamespacePrefix>dsw</vann:preferredNamespacePrefix>
+        <rdfs:label xml:lang="en">DSW Ontology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#time -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#time"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#annotation -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#annotation">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#AnnotatableElement"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#KeyValueEntry"/>
+        <rdfs:comment xml:lang="en">An additional information about the resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Annotation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#answerReplyValue -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#answerReplyValue">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#AnswerReply"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Answer"/>
+        <rdfs:comment xml:lang="en">An Answer as a reply to an Options Type Question.</rdfs:comment>
+        <rdfs:label xml:lang="en">Answer Reply Value</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#clientUrl -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#clientUrl">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ContextConfig"/>
+        <rdfs:range rdf:resource="https://schema.org/URL"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#containsAnswer -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#containsAnswer">
+        <rdfs:subPropertyOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#containsChild"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#OptionsQuestion"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Answer"/>
+        <rdfs:comment xml:lang="en">Possible answer associated with the Options type Question.</rdfs:comment>
+        <rdfs:label xml:lang="en">Contains Answer</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#containsChapter -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#containsChapter">
+        <rdfs:subPropertyOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#containsChild"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#KnowledgeModel"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Chapter"/>
+        <rdfs:comment xml:lang="en">Relation to a chapter that the knowledge model contains.</rdfs:comment>
+        <rdfs:label xml:lang="en">Contains Chapter</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#containsChild -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#containsChild">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ParentElement"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ChildElement"/>
+        <rdfs:comment xml:lang="en">A Child resource of the described resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Contains Child</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#containsChoice -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#containsChoice">
+        <rdfs:subPropertyOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#containsChild"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#MultiChoiceQuestion"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Choice"/>
+        <rdfs:comment xml:lang="en">Choice associated with the MultiChoice Type Question.</rdfs:comment>
+        <rdfs:label xml:lang="en">Uses Choice</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#containsExpert -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#containsExpert">
+        <rdfs:subPropertyOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#containsChild"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Question"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Expert"/>
+        <rdfs:comment xml:lang="en">An Expert that is an specialist for described Question.</rdfs:comment>
+        <rdfs:label xml:lang="en">Contains Expert</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#containsFollowupQuestion -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#containsFollowupQuestion">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Answer"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Question"/>
+        <rdfs:comment xml:lang="en">A Followup Question of this Answer.</rdfs:comment>
+        <rdfs:label xml:lang="en">Contains Followup Question</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#containsIntegration -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#containsIntegration">
+        <rdfs:subPropertyOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#containsChild"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#KnowledgeModel"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Integration"/>
+        <rdfs:comment xml:lang="en">Relation to an integration that the knowledge model contains.</rdfs:comment>
+        <rdfs:label xml:lang="en">Contains Integration</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#containsItemTemplFollowupQuestion -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#containsItemTemplFollowupQuestion">
+        <rdfs:subPropertyOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#containsChild"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ListOfItemsQuestion"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Question"/>
+        <rdfs:comment xml:lang="en">Followup question to the described Question.</rdfs:comment>
+        <rdfs:label xml:lang="en">Contains Item Template Followup Question</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#containsMetric -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#containsMetric">
+        <rdfs:subPropertyOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#containsChild"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#KnowledgeModel"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Metric"/>
+        <rdfs:comment xml:lang="en">Relation to a metric that the knowledge model contains.</rdfs:comment>
+        <rdfs:label xml:lang="en">Contains Metric</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#containsPhase -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#containsPhase">
+        <rdfs:subPropertyOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#containsChild"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#KnowledgeModel"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Phase"/>
+        <rdfs:comment xml:lang="en">Relation to a phase that the knowledge model contains.</rdfs:comment>
+        <rdfs:label xml:lang="en">Contains Phase</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#containsQuestion -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#containsQuestion">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Chapter"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Question"/>
+        <rdfs:comment xml:lang="en">Relation to a question that the chapter contains.</rdfs:comment>
+        <rdfs:label xml:lang="en">Contains Question</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#containsReference -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#containsReference">
+        <rdfs:subPropertyOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#containsChild"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Question"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Reference"/>
+        <rdfs:comment xml:lang="en">An external resource that provides additional information about described resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Contains Reference</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#containsTag -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#containsTag">
+        <rdfs:subPropertyOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#containsChild"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#KnowledgeModel"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Tag"/>
+        <rdfs:comment xml:lang="en">Relation to a tag that the knowledge model contains.</rdfs:comment>
+        <rdfs:label xml:lang="en">Contains Tag</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#creatorOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#creatorOf">
+        <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/made"/>
+        <owl:inverseOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#isCreatedBy"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#User"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#CreatedByElement"/>
+        <rdfs:comment xml:lang="en">An resource that the User is responsible of making.</rdfs:comment>
+        <rdfs:label xml:lang="en">Creator Of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#desiresQuestion -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#desiresQuestion">
+        <owl:inverseOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#isDesiredAtPhase"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Phase"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Question"/>
+        <rdfs:comment xml:lang="en">A Question that should be answered in this Phase.</rdfs:comment>
+        <rdfs:label xml:lang="en">Desires Question</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#hasChapterReport -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#hasChapterReport">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Report"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ChapterReportItem"/>
+        <rdfs:comment xml:lang="en">A connection of the Report to a Chapter Report.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Chapter Report</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#hasContextConfig -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#hasContextConfig">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Document"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ContextConfig"/>
+        <rdfs:comment xml:lang="en">A related additional information about configuration.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Context Configuration</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#hasCurrentVersion -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#hasCurrentVersion">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/hasVersion"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Questionnaire"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#QuestionnaireVersion"/>
+        <rdfs:comment xml:lang="en">A related QuestionnaireVersion that is a current version of the Questionnaire.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Current Version</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#hasDocument -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#hasDocument">
+        <owl:inverseOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#hasQuestionnaire"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Questionnaire"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Document"/>
+        <rdfs:comment xml:lang="en">A Document that describes this Questionnaire.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Document</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#hasIndication -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#hasIndication">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ReportItem"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ReportIndication"/>
+        <rdfs:comment xml:lang="en">A connection to an indication of results in the Report Item.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Indication</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#hasIntegration -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#hasIntegration">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#IntegrationQuestion"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Integration"/>
+        <rdfs:comment xml:lang="en">Integration associated with the Integration Type Question.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Integration</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#hasKnowledgeModel -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#hasKnowledgeModel">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Document"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#KnowledgeModel"/>
+        <rdfs:comment xml:lang="en">A related Knowledge Model that is the base of Questionnaire that this Document describes.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Knowledge Model</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#hasMetric -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#hasMetric">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#MetricElement"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Metric"/>
+        <rdfs:comment xml:lang="en">A connection of the described resource to the metric that is used for evaluation within the report.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Metric</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#hasMetricMeasure -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#hasMetricMeasure">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Answer"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#MetricMeasure"/>
+        <rdfs:comment xml:lang="en">An effect of the Answer to a certain measure.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Metric Measure</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#hasOrganization -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#hasOrganization">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Document"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Organization"/>
+        <rdfs:comment xml:lang="en">A related Organization that has the instance of DSW with Questionnaire that this Document describes.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Organization</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#hasParent -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#hasParent">
+        <owl:inverseOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#containsChild"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ChildElement"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ParentElement"/>
+        <rdfs:comment xml:lang="en">A Parent resource of the described resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Parent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#hasPhase -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#hasPhase">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Questionnaire"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Phase"/>
+        <rdfs:comment xml:lang="en">A related phase that the Questionnaire is in.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Phase</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#hasQuestionnaire -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#hasQuestionnaire">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Document"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Questionnaire"/>
+        <rdfs:comment xml:lang="en">A related Questionnaire that described final document uses.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Questionnaire</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#hasReply -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#hasReply">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Question"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Reply"/>
+        <rdfs:comment xml:lang="en">A response of the question.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Reply</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#hasReport -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#hasReport">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Document"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Report"/>
+        <rdfs:comment xml:lang="en">A related Report of Questionnaire that the document describes.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Report</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#hasResult -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#hasResult">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ReportItem"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ReportMetric"/>
+        <rdfs:comment xml:lang="en">A result of the Report Item.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Result</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#hasTag -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#hasTag">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Question"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Tag"/>
+        <rdfs:comment xml:lang="en">A Tag that marks described resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Tag</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#hasTotalReport -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#hasTotalReport">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Report"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#TotalReportItem"/>
+        <rdfs:comment xml:lang="en">A connection of the Report to a Total Report.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Total Report</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#hasVersion -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#hasVersion">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/hasVersion"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Questionnaire"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#QuestionnaireVersion"/>
+        <rdfs:comment xml:lang="en">A related QuestionnaireVersion that is a version of the Questionnaire.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Version</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#imageUrl -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#imageUrl">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#User"/>
+        <rdfs:range rdf:resource="https://schema.org/URL"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#integrationReplyValue -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#integrationReplyValue">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#IntegrationTypeIntegrationReply"/>
+        <rdfs:range rdf:resource="https://schema.org/URL"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#isAboutChapter -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#isAboutChapter">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ChapterReportItem"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Chapter"/>
+        <rdfs:comment xml:lang="en">A connection to a Chapter that this Report Item is about.</rdfs:comment>
+        <rdfs:label xml:lang="en">Is About Chapter</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#isAnswerToReply -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#isAnswerToReply">
+        <owl:inverseOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#answerReplyValue"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Answer"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#AnswerReply"/>
+        <rdfs:comment xml:lang="en">A Reply that contains this Answer.</rdfs:comment>
+        <rdfs:label xml:lang="en">Is Answer To Reply</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#isChapterReportOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#isChapterReportOf">
+        <owl:inverseOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#hasChapterReport"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ChapterReportItem"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Report"/>
+        <rdfs:comment xml:lang="en">A connection of the Chapter Report to a Report.</rdfs:comment>
+        <rdfs:label xml:lang="en">Is Chapter Report Of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#isChoiceToReply -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#isChoiceToReply">
+        <owl:inverseOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#multiChoiceReplyValue"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Choice"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#MultiChoiceReply"/>
+        <rdfs:comment xml:lang="en">A Reply that contains this Choice.</rdfs:comment>
+        <rdfs:label xml:lang="en">Is Choice To Reply</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#isContextConfigOfDocument -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#isContextConfigOfDocument">
+        <owl:inverseOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#hasContextConfig"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ContextConfig"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Document"/>
+        <rdfs:comment xml:lang="en">A Document that describes DSW instance with this additional information.</rdfs:comment>
+        <rdfs:label xml:lang="en">Is Context Configuration Of Document</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#isCreatedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#isCreatedBy">
+        <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/maker"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#CreatedByElement"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#User"/>
+        <rdfs:comment xml:lang="en">An user responsible for making the resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Is Created By</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#isCurrentVersionOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#isCurrentVersionOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/isVersionOf"/>
+        <owl:inverseOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#hasCurrentVersion"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#QuestionnaireVersion"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Questionnaire"/>
+        <rdfs:comment xml:lang="en">A related QuestionnaireVersion that is a current version of Questionnaire.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Current Version</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#isDesiredAtPhase -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#isDesiredAtPhase">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Question"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Phase"/>
+        <rdfs:comment xml:lang="en">A Phase associated with the question indicates when the question should be answered.</rdfs:comment>
+        <rdfs:label xml:lang="en">Is Desired At Phase</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#isIndicationOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#isIndicationOf">
+        <owl:inverseOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#hasIndication"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ReportIndication"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ReportItem"/>
+        <rdfs:comment xml:lang="en">A connection a part of Result that the indication is about.</rdfs:comment>
+        <rdfs:label xml:lang="en">Is Indication Of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#isIntegrationOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#isIntegrationOf">
+        <owl:inverseOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#hasIntegration"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Integration"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#IntegrationQuestion"/>
+        <rdfs:comment xml:lang="en">Integration associated with Integration Type Question.</rdfs:comment>
+        <rdfs:label xml:lang="en">Uses Integration</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#isKnowledgeModelOfDocument -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#isKnowledgeModelOfDocument">
+        <owl:inverseOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#hasKnowledgeModel"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#KnowledgeModel"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Document"/>
+        <rdfs:comment xml:lang="en">A connection to the Document that contains Questionnaire that is based on the Knowledge Model.</rdfs:comment>
+        <rdfs:label xml:lang="en">Is Knowledge Model of Document</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#isMetricMeasureOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#isMetricMeasureOf">
+        <owl:inverseOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#hasMetricMeasure"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#MetricMeasure"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Answer"/>
+        <rdfs:comment xml:lang="en">An Answer that has this metric measure.</rdfs:comment>
+        <rdfs:label xml:lang="en">Is Metric Measure Of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#isMetricOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#isMetricOf">
+        <owl:inverseOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#hasMetric"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Metric"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#MetricElement"/>
+        <rdfs:comment xml:lang="en">Connection to a resource that the metric measures.</rdfs:comment>
+        <rdfs:label xml:lang="en">Is Metric Of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#isOrganizationOfDocument -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#isOrganizationOfDocument">
+        <owl:inverseOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#hasOrganization"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Organization"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Document"/>
+        <rdfs:comment xml:lang="en">A Document that describes Questionnaire of this Organization.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Organization</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#isPhaseOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#isPhaseOf">
+        <owl:inverseOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#hasPhase"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Phase"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Questionnaire"/>
+        <rdfs:comment xml:lang="en">A Questionnaire that is in this Phase.</rdfs:comment>
+        <rdfs:label xml:lang="en">Is Phase Of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#isReplyTo -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#isReplyTo">
+        <owl:inverseOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#hasReply"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Reply"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Question"/>
+        <rdfs:comment xml:lang="en">A question to which the reply relates.</rdfs:comment>
+        <rdfs:label xml:lang="en">Is Reply To</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#isReportOfDocument -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#isReportOfDocument">
+        <owl:inverseOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#hasReport"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Report"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Document"/>
+        <rdfs:comment xml:lang="en">A document that describes a Questionnaire that this Report is about.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Report</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#isResultOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#isResultOf">
+        <owl:inverseOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#hasResult"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ReportMetric"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ReportItem"/>
+        <rdfs:comment xml:lang="en">A Report Item that this result is about.</rdfs:comment>
+        <rdfs:label xml:lang="en">Is Result Of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#isTagOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#isTagOf">
+        <owl:inverseOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#hasTag"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Tag"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Question"/>
+        <rdfs:comment xml:lang="en">Resource that is makred by the tag.</rdfs:comment>
+        <rdfs:label xml:lang="en">Is Tag Of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#isTotalReportOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#isTotalReportOf">
+        <owl:inverseOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#hasTotalReport"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#TotalReportItem"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Report"/>
+        <rdfs:comment xml:lang="en">A connection of the Total Report to a Report.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Total Report</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#isVersionOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#isVersionOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/isVersionOf"/>
+        <owl:inverseOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#hasVersion"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#QuestionnaireVersion"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Questionnaire"/>
+        <rdfs:comment xml:lang="en">A related QuestionnaireVersion that is a version of Questionnaire.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Version</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#multiChoiceReplyValue -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#multiChoiceReplyValue">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#MultiChoiceReply"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Choice"/>
+        <rdfs:comment xml:lang="en">A Choice as a reply to a MultiChoice Type Question.</rdfs:comment>
+        <rdfs:label xml:lang="en">MultiChoice Reply Value</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#prop -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#prop">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#PropsableElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#referenceUrl -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#referenceUrl">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#URLReference"/>
+        <rdfs:range rdf:resource="https://schema.org/URL"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#rqHeader -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#rqHeader">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ApiIntegration"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#KeyValueEntry"/>
+        <rdfs:comment xml:lang="en">A HTTP Request Header of an external resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Request Header</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#urlReplyValue -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#urlReplyValue">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ValueReply"/>
+        <rdfs:range rdf:resource="https://schema.org/URL"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#usesKnowledgeModel -->
+
+
+    <owl:ObjectProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#usesKnowledgeModel">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Questionnaire"/>
+        <rdfs:range rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#KnowledgeModel"/>
+        <rdfs:comment xml:lang="en">A Knowledge Model that this Questionnaire is based on.</rdfs:comment>
+        <rdfs:label xml:lang="en">Uses Knowledge Model</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/isVersionOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/isVersionOf"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/made -->
+
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/made"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/maker -->
+
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/maker"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#abbreviation -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#abbreviation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Metric"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Abbreviation title.</rdfs:comment>
+        <rdfs:label xml:lang="en">Abbreviation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#advice -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#advice">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Answer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">An advice about the answer.</rdfs:comment>
+        <rdfs:label xml:lang="en">Advice</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#affiliation -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#affiliation">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#AffiliationableElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">An affiliation of the resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Affiliation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#answered -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#answered">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ReportIndication"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">The number of answered questions in the section described by the Report Item.</rdfs:comment>
+        <rdfs:label xml:lang="en">Answered</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#clientUrl -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#clientUrl">
+        <rdfs:subPropertyOf rdf:resource="https://schema.org/url"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#color -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#color">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Tag"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Association with a color.</rdfs:comment>
+        <rdfs:label xml:lang="en">Color</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#createdAt -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#createdAt">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/created"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#CreatedElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="en">A point of time associated with creation of the resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Created At</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#dateReplyValue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#dateReplyValue">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ValueReply"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment xml:lang="en">A value of the reply in date format.</rdfs:comment>
+        <rdfs:label xml:lang="en">Date Reply Value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#dateTimeReplyValue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#dateTimeReplyValue">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ValueReply"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="en">A value of the reply in datetime format.</rdfs:comment>
+        <rdfs:label xml:lang="en">DateTime Reply Value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#description -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#description">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#DescribableElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">A description of the resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#documentTemplateMetamodelVersion -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#documentTemplateMetamodelVersion">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ContextConfig"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label xml:lang="en">Document Template Metamodel Version.</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#email -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#email">
+        <rdfs:subPropertyOf rdf:resource="https://schema.org/email"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#EmailableElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">A contact e-mail adress of the resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">E-mail</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#entryKey -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#entryKey">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#KeyValueEntry"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The key value of the dictionary element.</rdfs:comment>
+        <rdfs:label xml:lang="en">Key Value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#entryValue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#entryValue">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#KeyValueEntry"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The entry value of the dictionary element.</rdfs:comment>
+        <rdfs:label xml:lang="en">Entry Value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#eventUuid -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#eventUuid">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#QuestionnaireVersion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">An UUID of Event that creates QuestionnaireVersion.</rdfs:comment>
+        <rdfs:label xml:lang="en">Event UUID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#firstName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#firstName">
+        <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/firstName"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The First Name of the User.</rdfs:comment>
+        <rdfs:label xml:lang="en">First Name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#hasProjectTag -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#hasProjectTag">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Questionnaire"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">A label of the project Questionnaire.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Project Tag</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#imageUrl -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#imageUrl">
+        <rdfs:subPropertyOf rdf:resource="https://schema.org/url"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#indicationType -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#indicationType">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ReportIndication"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Type of indication of a result in a Report.</rdfs:comment>
+        <rdfs:label xml:lang="en">Indication Type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#integrationId -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#integrationId">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Integration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">An Identification of an integration.</rdfs:comment>
+        <rdfs:label xml:lang="en">Integration ID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#integrationReplyItem -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#integrationReplyItem">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#IntegrationTypeIntegrationReply"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">An item of the external resource as the reply to an Integration Type Question.</rdfs:comment>
+        <rdfs:label xml:lang="en">Integration Reply Item</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#integrationReplyValue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#integrationReplyValue">
+        <rdfs:subPropertyOf rdf:resource="https://schema.org/url"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#itemUrl -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#itemUrl">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Integration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:comment xml:lang="en">A scheme of an URL adress of an element of an external resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Item URL</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#knowledgeModelId -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#knowledgeModelId">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#KnowledgeModel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">An identification of a knowledge model.</rdfs:comment>
+        <rdfs:label xml:lang="en">Knowledge Model Identifier</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#lastName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#lastName">
+        <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/lastName"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The Last Name of the User.</rdfs:comment>
+        <rdfs:label xml:lang="en">Last Name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#logo -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#logo">
+        <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/logo"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Integration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">A logo of the integration.</rdfs:comment>
+        <rdfs:label xml:lang="en">Logo</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#measure -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#measure">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#MetricMeasure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">A measure impact to a metric.</rdfs:comment>
+        <rdfs:label xml:lang="en">Measure</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#numberReplyValue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#numberReplyValue">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ValueReply"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">A value of the reply in numeric format.</rdfs:comment>
+        <rdfs:label xml:lang="en">Number Reply Value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#order -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#order">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ChildElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">The order of occurence of the described resource in parent resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Order</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#organizationId -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#organizationId">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Organization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">An identification of the Organization.</rdfs:comment>
+        <rdfs:label xml:lang="en">Organization Identifier</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#path -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#path">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Reply"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">An identifying path of a reply, that consists of the identification of the chapter, questions, and possibly answers.</rdfs:comment>
+        <rdfs:label xml:lang="en">Path</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#permission -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#permission">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">A permission of the User in a project.</rdfs:comment>
+        <rdfs:label xml:lang="en">Permission</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#referenceUrl -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#referenceUrl">
+        <rdfs:subPropertyOf rdf:resource="https://schema.org/url"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#replyValue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#replyValue">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Reply"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">A value of the reply.</rdfs:comment>
+        <rdfs:label xml:lang="en">Reply Value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#reportItemId -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#reportItemId">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ReportItem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Identification of the Report Item.</rdfs:comment>
+        <rdfs:label xml:lang="en">Report Item Identifier</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#resultMeasure -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#resultMeasure">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ReportMetric"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">Result of a section described by the Report Item.</rdfs:comment>
+        <rdfs:label xml:lang="en">Result Measure</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#role -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#role">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">A project role of the User.</rdfs:comment>
+        <rdfs:label xml:lang="en">Role</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#rqBody -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#rqBody">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ApiIntegration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">A HTTP Request Body of an external resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Request Body</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#rqEmptySearch -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#rqEmptySearch">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ApiIntegration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">A empty query is possible to make for an external resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Request Empty Search</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#rqMethod -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#rqMethod">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ApiIntegration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">A HTTP Method of an external resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Request Method</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#rqUrl -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#rqUrl">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ApiIntegration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:comment xml:lang="en">A scheme of a Request URL adress of an external resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Request URL</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#rsItemId -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#rsItemId">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ApiIntegration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">An identification of an element in an external resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Response Item Id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#rsItemTemplate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#rsItemTemplate">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ApiIntegration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">A teplate of displaying an element from an external resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Response Item Template</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#rsListField -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#rsListField">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ApiIntegration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">A path to list of elements in an external resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Response List Field</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#shorUuid -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#shorUuid">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ResourcePageReference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">An Identification of a chapter in a book of a reference.</rdfs:comment>
+        <rdfs:label xml:lang="en">Short Universally Unique Identifier</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#source -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#source">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">A source of the User.</rdfs:comment>
+        <rdfs:label xml:lang="en">Source</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#timeReplyValue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#timeReplyValue">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ValueReply"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+        <rdfs:comment xml:lang="en">A value of the reply in time format.</rdfs:comment>
+        <rdfs:label xml:lang="en">Time Reply Value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#title -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#title">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/title"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#TitleElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">A name of a the resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Title</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#unanswered -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#unanswered">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ReportIndication"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">The number of unanswered questions in a section described by the Report Item.</rdfs:comment>
+        <rdfs:label xml:lang="en">Unswered</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#updatedAt -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#updatedAt">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/modified"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#UpdatedElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="en">A point of time associated with the last update of the resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Updated At</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#urlReplyValue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#urlReplyValue">
+        <rdfs:subPropertyOf rdf:resource="https://schema.org/url"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#uuid -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#uuid">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#UuidElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Universally Unique Identifier of the resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Universally Unique Identifier</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#valueType -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#valueType">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ValueQuestion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Type of reply value of the Value Type Question.</rdfs:comment>
+        <rdfs:label xml:lang="en">Value Type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#version -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#version">
+        <rdfs:subPropertyOf rdf:resource="https://schema.org/version"/>
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#KnowledgeModel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Identification of a related version of described resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">version</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#weight -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#weight">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#MetricMeasure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">An importance of a metric.</rdfs:comment>
+        <rdfs:label xml:lang="en">Weight</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#widgetUrl -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ds-wizard.org/dsw-ontology#widgetUrl">
+        <rdfs:domain rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#WidgetIntegration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:comment xml:lang="en">A scheme of a Widget URL link of an external resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Widget URL</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/firstName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/firstName"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/lastName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/lastName"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/logo -->
+
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/logo"/>
+    
+
+
+    <!-- https://schema.org/email -->
+
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/email"/>
+    
+
+
+    <!-- https://schema.org/url -->
+
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/url"/>
+    
+
+
+    <!-- https://schema.org/version -->
+
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/version"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#AffiliationableElement -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#AffiliationableElement">
+        <rdfs:comment xml:lang="en">An abstract class carrying the Affiliation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Affiliationable Element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#AnnotatableElement -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#AnnotatableElement">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#annotation"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An abstract class carrying the annotation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Annotatable Element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#Answer -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#Answer">
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ChildElement"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ParentElement"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#TitleElement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#hasParent"/>
+                <owl:allValuesFrom rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#OptionsQuestion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#isAnswerToReply"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#advice"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An Answer is a predefined reply to an Options Type question.</rdfs:comment>
+        <rdfs:label xml:lang="en">Answer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#AnswerReply -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#AnswerReply">
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Reply"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#answerReplyValue"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#answerReplyValue"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#replyValue"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An Answer Reply is a type of response that is given to an Options type question.</rdfs:comment>
+        <rdfs:label xml:lang="en">Answer Reply</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#ApiIntegration -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#ApiIntegration">
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Integration"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#rqBody"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#rqEmptySearch"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#rqMethod"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#rqUrl"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#rsItemId"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#rsItemTemplate"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#rsListField"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An API Integration is type of Integration that uses API.</rdfs:comment>
+        <rdfs:label xml:lang="en">API Integration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#Chapter -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#Chapter">
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ChildElement"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#DescribableElement"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ParentElement"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#TitleElement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#hasParent"/>
+                <owl:allValuesFrom rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#KnowledgeModel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A Chapter is a collection of questions.</rdfs:comment>
+        <rdfs:label>Chapter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#ChapterReportItem -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#ChapterReportItem">
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ReportItem"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#isAboutChapter"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#isChapterReportOf"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A Chapter Report Item is a part of a Report that is about concrete Chapter.</rdfs:comment>
+        <rdfs:label xml:lang="en">Report Item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#ChildElement -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#ChildElement">
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#AnnotatableElement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#hasParent"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#order"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An abstract class carrying the hasParent and order.</rdfs:comment>
+        <rdfs:label xml:lang="en">Child Element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#Choice -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#Choice">
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ChildElement"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#TitleElement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#hasParent"/>
+                <owl:allValuesFrom rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#MultiChoiceQuestion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A Choice is a predefined option to Multi-Choice Type question.</rdfs:comment>
+        <rdfs:label xml:lang="en">Choice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#ContextConfig -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#ContextConfig">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#clientUrl"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#documentTemplateMetamodelVersion"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A Context Configuration is set of configuration parameters of DSW.</rdfs:comment>
+        <rdfs:label xml:lang="en">Context Configuration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#CreatedByElement -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#CreatedByElement">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#isCreatedBy"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#isCreatedBy"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An abstract class carrying the CreatedBy.</rdfs:comment>
+        <rdfs:label xml:lang="en">Created By Element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#CreatedElement -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#CreatedElement">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#createdAt"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An abstract class carrying the CreatedAt.</rdfs:comment>
+        <rdfs:label xml:lang="en">Created Element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#DescribableElement -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#DescribableElement">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#description"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#description"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An abstract class carrying the description.</rdfs:comment>
+        <rdfs:label xml:lang="en">Describable Element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#Document -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#Document">
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#UpdatedElement"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#UuidElement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#hasContextConfig"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#hasKnowledgeModel"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#hasOrganization"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#hasQuestionnaire"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#hasReport"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Document is an exported document of the instance of the questionnaire.</rdfs:comment>
+        <rdfs:label xml:lang="en">Document</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#EmailableElement -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#EmailableElement">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#email"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#email"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An abstract class carrying the E-mail.</rdfs:comment>
+        <rdfs:label xml:lang="en">E-mail Element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#Expert -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#Expert">
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ChildElement"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#EmailableElement"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#TitleElement"/>
+        <rdfs:subClassOf rdf:resource="https://schema.org/ContactPoint"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#hasParent"/>
+                <owl:allValuesFrom rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Question"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#email"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An Expert is a specialist for a specific topic that can be contacted. </rdfs:comment>
+        <rdfs:label xml:lang="en">Expert</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#Integration -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#Integration">
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ChildElement"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#PropsableElement"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#TitleElement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#hasParent"/>
+                <owl:allValuesFrom rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#KnowledgeModel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#prop"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#integrationId"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#itemUrl"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#logo"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An Integration is a connection to external service or resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Integration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#IntegrationQuestion -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#IntegrationQuestion">
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#PropsableElement"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#prop"/>
+                <owl:allValuesFrom rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#KeyValueEntry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#hasIntegration"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An Integration Question is a type of question that uses an external resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Integration Question</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#IntegrationReply -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#IntegrationReply">
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Reply"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#replyValue"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An Integration Reply is a type of response that is given to an Integration type question.</rdfs:comment>
+        <rdfs:label xml:lang="en">Integration Reply</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#IntegrationTypeIntegrationReply -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#IntegrationTypeIntegrationReply">
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#IntegrationReply"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#integrationReplyValue"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#integrationReplyItem"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An Integration Type Integration Reply is a type of Integration Replie that includes a valid URL link to an element in an external resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Integration Type Integration Reply</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#ItemListReply -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#ItemListReply">
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Reply"/>
+        <rdfs:comment xml:lang="en">An Item List Reply is a type of response that gathers a list of elements in response to a List Item type question.</rdfs:comment>
+        <rdfs:label xml:lang="en">Item List Reply</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#KeyValueEntry -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#KeyValueEntry">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#entryKey"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#entryValue"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An abstract class carrying the key and value.</rdfs:comment>
+        <rdfs:label xml:lang="en">Key Value Entry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#KnowledgeModel -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#KnowledgeModel">
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#AnnotatableElement"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#CreatedElement"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#DescribableElement"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ParentElement"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#UuidElement"/>
+        <rdfs:subClassOf rdf:resource="https://schema.org/CreativeWork"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#description"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#knowledgeModelId"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#version"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A Knowledge Model is a structured template that consists of metrics, phases, question tags integrations and chapters.</rdfs:comment>
+        <rdfs:label xml:lang="en">Knowledge Model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#ListOfItemsQuestion -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#ListOfItemsQuestion">
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Question"/>
+        <rdfs:comment xml:lang="en">A List Of Items Question is a type of question for multiple replies based on item template.</rdfs:comment>
+        <rdfs:label xml:lang="en">List Of Items Question</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#Metric -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#Metric">
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ChildElement"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#DescribableElement"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#TitleElement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#hasParent"/>
+                <owl:allValuesFrom rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#KnowledgeModel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#abbreviation"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A Metric is a clasification for Options Questions and questionnaire in general.</rdfs:comment>
+        <rdfs:label xml:lang="en">Metric</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#MetricElement -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#MetricElement">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#hasMetric"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An abstract class carrying the Metric.</rdfs:comment>
+        <rdfs:label xml:lang="en">Metric Element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#MetricMeasure -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#MetricMeasure">
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#MetricElement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#isMetricMeasureOf"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#measure"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#weight"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A Metric Measure is a measure of the effect of an answer on a defined metric.</rdfs:comment>
+        <rdfs:label xml:lang="en">Metric Measure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#MultiChoiceQuestion -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#MultiChoiceQuestion">
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Question"/>
+        <rdfs:comment xml:lang="en">A MultiChoice Question is a type of question whit list of possible choices.</rdfs:comment>
+        <rdfs:label xml:lang="en">MultiChoice Question</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#MultiChoiceReply -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#MultiChoiceReply">
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Reply"/>
+        <rdfs:comment xml:lang="en">A MultiChoice Reply is a type of response that is given to a MultiChoice type question.</rdfs:comment>
+        <rdfs:label xml:lang="en">MultiChoice Reply</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#OptionsQuestion -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#OptionsQuestion">
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Question"/>
+        <rdfs:comment xml:lang="en">An Options Question is a type of question with closed list of answers.</rdfs:comment>
+        <rdfs:label xml:lang="en">Options Question</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#Organization -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#Organization">
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#AffiliationableElement"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#DescribableElement"/>
+        <rdfs:subClassOf rdf:resource="https://schema.org/Organization"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#description"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#organizationId"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An Organization is a group that manages an instance of DSW.</rdfs:comment>
+        <rdfs:label xml:lang="en">Organization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#ParentElement -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#ParentElement">
+        <rdfs:comment xml:lang="en">An abstract class carrying the containsChild.</rdfs:comment>
+        <rdfs:label xml:lang="en">Parent Element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#Phase -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#Phase">
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ChildElement"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#DescribableElement"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#TitleElement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#hasParent"/>
+                <owl:allValuesFrom rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#KnowledgeModel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A Phase is status of the questionnaire filling process.</rdfs:comment>
+        <rdfs:label xml:lang="en">Phase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#PlainTypeIntegrationReply -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#PlainTypeIntegrationReply">
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#IntegrationReply"/>
+        <rdfs:comment xml:lang="en">A Plain Type Integration Reply is a type of Integration Replie that does not include a valid URL link to an element in an external resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Plain Type Integration Reply</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#PropsableElement -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#PropsableElement">
+        <rdfs:comment xml:lang="en">An abstract class carrying the Prop.</rdfs:comment>
+        <rdfs:label xml:lang="en">Propsable Element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#Question -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#Question">
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ChildElement"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#DescribableElement"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ParentElement"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#TitleElement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#hasParent"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://ontology.ds-wizard.org/dsw-ontology#Answer"/>
+                            <rdf:Description rdf:about="http://ontology.ds-wizard.org/dsw-ontology#Chapter"/>
+                            <rdf:Description rdf:about="http://ontology.ds-wizard.org/dsw-ontology#ListOfItemsQuestion"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#isDesiredAtPhase"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A Question is used to collect replies from users.</rdfs:comment>
+        <rdfs:label xml:lang="en">Question</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#Questionnaire -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#Questionnaire">
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#CreatedByElement"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#DescribableElement"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#TitleElement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#hasCurrentVersion"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#isCreatedBy"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#usesKnowledgeModel"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#hasPhase"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A Questionnaire is a fill-in form for gathering information form users based on the Knowledge Model.</rdfs:comment>
+        <rdfs:label xml:lang="en">Questionnaire</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#QuestionnaireVersion -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#QuestionnaireVersion">
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#CreatedByElement"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#DescribableElement"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#TitleElement"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#UpdatedElement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#isCurrentVersionOf"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#isVersionOf"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#description"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#eventUuid"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A Questionnaire Version is a version of Questionnaire.</rdfs:comment>
+        <rdfs:label xml:lang="en">Questionnaire Version</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#Reference -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#Reference">
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ChildElement"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#UuidElement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#hasParent"/>
+                <owl:allValuesFrom rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Question"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A Reference provides additional informations that can be used to answer a question.</rdfs:comment>
+        <rdfs:label xml:lang="en">Reference</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#Reply -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#Reply">
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#CreatedByElement"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#CreatedElement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#isCreatedBy"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#isReplyTo"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#path"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A Reply is a response to a question.</rdfs:comment>
+        <rdfs:label xml:lang="en">Reply</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#Report -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#Report">
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#UpdatedElement"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#UuidElement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#hasTotalReport"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A Report is an evaluation of information gathered from a questionnaire.</rdfs:comment>
+        <rdfs:label xml:lang="en">Report</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#ReportIndication -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#ReportIndication">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#isIndicationOf"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#answered"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#indicationType"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#unanswered"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A Report Indication is an additional indication for Report Item.</rdfs:comment>
+        <rdfs:label xml:lang="en">Report Indication</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#ReportItem -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#ReportItem">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#reportItemId"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A Report Item is a part of a Report.</rdfs:comment>
+        <rdfs:label xml:lang="en">Report Item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#ReportMetric -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#ReportMetric">
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#MetricElement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#isResultOf"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#resultMeasure"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A Report Metric is a metric result that is associated with a Report Item.</rdfs:comment>
+        <rdfs:label xml:lang="en">Report Metric</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#ResourcePageReference -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#ResourcePageReference">
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Reference"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#shorUuid"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A Resource Page Reference provides additional information that can be used to answer a question in form of linked chapter of a book.</rdfs:comment>
+        <rdfs:label xml:lang="en">Resource Page Reference</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#Tag -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#Tag">
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ChildElement"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#DescribableElement"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#TitleElement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#hasParent"/>
+                <owl:allValuesFrom rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#KnowledgeModel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#color"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A Tag is an attachable label for questions.</rdfs:comment>
+        <rdfs:label xml:lang="en">Tag</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#TitleElement -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#TitleElement">
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#UuidElement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#title"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An abstract class carrying the title.</rdfs:comment>
+        <rdfs:label xml:lang="en">Title Element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#TotalReportItem -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#TotalReportItem">
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#ReportItem"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#isTotalReportOf"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A Report Item is a part of a Report that is about Questionnaire in general.</rdfs:comment>
+        <rdfs:label xml:lang="en">Report Item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#URLReference -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#URLReference">
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Reference"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#TitleElement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#referenceUrl"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>An URL Reference provides additional information that can be used to answer a question in form of a URL link to resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">URL Reference</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#UpdatedElement -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#UpdatedElement">
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#CreatedElement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#updatedAt"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An abstract class carrying the UpdatedAt.</rdfs:comment>
+        <rdfs:label xml:lang="en">Updated Element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#User -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#User">
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#AffiliationableElement"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#EmailableElement"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#UpdatedElement"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#UuidElement"/>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#imageUrl"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#firstName"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#lastName"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#affiliation"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#role"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A User is a person who uses or participates in DSW.</rdfs:comment>
+        <rdfs:label xml:lang="en">User</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#UuidElement -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#UuidElement">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#uuid"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An abstract class carrying the UUID identifier.</rdfs:comment>
+        <rdfs:label xml:lang="en">UUID Element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#ValueQuestion -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#ValueQuestion">
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Question"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#valueType"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A Value Question is a type of question with open single value reply.</rdfs:comment>
+        <rdfs:label xml:lang="en">Value Question</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#ValueReply -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#ValueReply">
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Reply"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#urlReplyValue"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#dateReplyValue"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#dateTimeReplyValue"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#numberReplyValue"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#replyValue"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#timeReplyValue"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A Value Reply is a type of response that is given to a Value type question.</rdfs:comment>
+        <rdfs:label xml:lang="en">Value Reply</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology#WidgetIntegration -->
+
+
+    <owl:Class rdf:about="http://ontology.ds-wizard.org/dsw-ontology#WidgetIntegration">
+        <rdfs:subClassOf rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#Integration"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.ds-wizard.org/dsw-ontology#widgetUrl"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A Widget Integration is type of Integration that uses Widget implementation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Widget Integration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Resource -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    
+
+
+    <!-- https://schema.org/ContactPoint -->
+
+
+    <owl:Class rdf:about="https://schema.org/ContactPoint"/>
+    
+
+
+    <!-- https://schema.org/CreativeWork -->
+
+
+    <owl:Class rdf:about="https://schema.org/CreativeWork"/>
+    
+
+
+    <!-- https://schema.org/Organization -->
+
+
+    <owl:Class rdf:about="https://schema.org/Organization"/>
+    
+
+
+    <!-- https://schema.org/URL -->
+
+
+    <owl:Class rdf:about="https://schema.org/URL"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://ontology.ds-wizard.org/dsw-ontology# -->
+
+
+    <owl:NamedIndividual rdf:about="http://ontology.ds-wizard.org/dsw-ontology#">
+        <terms:description xml:lang="en"></terms:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://ontology.ds-wizard.org/dsw-ontology#clientUrl">
+        <rdfs:comment xml:lang="en">An URL of DSW instance of Organization.</rdfs:comment>
+        <rdfs:label xml:lang="en">Client URL</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.ds-wizard.org/dsw-ontology#imageUrl">
+        <rdfs:comment xml:lang="en">An URL of Image of the User.</rdfs:comment>
+        <rdfs:label xml:lang="en">Image URL</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.ds-wizard.org/dsw-ontology#integrationReplyValue">
+        <rdfs:comment xml:lang="en">A value of the reply to an Integration Type Question.</rdfs:comment>
+        <rdfs:label xml:lang="en">Integration Reply Value</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.ds-wizard.org/dsw-ontology#prop">
+        <rdfs:comment xml:lang="en">The support variables in a query of the described resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Prop</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.ds-wizard.org/dsw-ontology#referenceUrl">
+        <rdfs:comment xml:lang="en">An URL link to the reference.</rdfs:comment>
+        <rdfs:label xml:lang="en">Reference URL</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.ds-wizard.org/dsw-ontology#urlReplyValue">
+        <rdfs:comment xml:lang="en">A value of the reply in URL format.</rdfs:comment>
+        <rdfs:label xml:lang="en">URL Reply Value</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
